@@ -1,6 +1,26 @@
 extends /blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Список страниц';
+
+	style.
+		body {
+			display: flex;
+			height: 100vh;
+		}
+		.page-links {
+			margin: auto;
+		}
+
+		.page-links__item {
+			display: block;
+			font-size: 24px;
+			color: deepskyblue;
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+		}
 
 block content
+	.page-links
+		a.page-links__item(href='./main.html') Главная
+		a.page-links__item(href='./main.html') Услуги
