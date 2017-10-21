@@ -1,0 +1,7 @@
+include ../header-menu/header-menu
+include ../header-info/header-info
+
+mixin header(menu)
+	+b('header').header&attributes(attributes)
+		+header-menu(menu)
+		+header-info

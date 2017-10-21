@@ -1,0 +1,7 @@
+mixin header-menu(links)
+	+b.header-menu&attributes(attributes)
+		.content
+			+e('ul').list
+				each link in links
+					+e('li').list-item
+						+e('a').link(href=link.href)=link.name
