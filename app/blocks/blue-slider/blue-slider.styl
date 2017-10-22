@@ -1,0 +1,59 @@
+.blue-slider
+	position: relative
+	background-image: url(../images/blue-slider-bg.png), linear-gradient(221deg, #327fd6, #0e5bb2)
+	height: 396px
+	overflow: hidden
+
+	&__item
+		height: 100%
+
+	&__title
+		margin-bottom: 18px
+		display: block
+		font-family: $GothamProBold
+		font-size: 40px
+		color: #fff
+
+	&__text
+		margin-bottom: 36px
+		font-family: $GothamProLight
+		font-size: 14px
+		line-height: 1.4
+		color: rgba(255, 255, 255, 0.71)
+
+	&__content
+		position: relative
+
+	&__image
+		position: absolute
+		right: 0
+		bottom: -154px
+
+	&__text-content
+		width: 60%
+
+	&__arrows
+		width: $contentSize
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		margin: auto
+		display: flex
+		align-items: center
+
+	&__arrow
+		position: absolute
+		size: 41px 29px
+		background-image: url(../images/arrow.png)
+		background-size: contain
+		cursor: pointer
+
+		&_left
+			left: -87px
+
+		&_right
+			right: -87px
+			transform rotate(180deg)
+
+

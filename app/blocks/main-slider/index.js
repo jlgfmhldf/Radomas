@@ -8,12 +8,15 @@ const sliderOptions = {
 		clickable: true,
 		modifierClass: 'main-slider__',
 		bulletClass: 'main-slider__circle',
-		bulletActiveClass: 'main-slider__circle_active'
+		bulletActiveClass: 'main-slider__circle_active',
 	},
 	loop: true,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+	},
+	autoplay: {
+		delay: 5000,
 	},
 }
 
