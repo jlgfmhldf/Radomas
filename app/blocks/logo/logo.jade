@@ -1,4 +1,10 @@
-mixin logo()
+mixin logo(data)
+	- data = data || {}
+	- white = data.white || false
+
 	+b.logo&attributes(attributes)
-		+e('img').img(src='./images/logo.png')
-		+e('span').text Правовой центр ООО «Радомас»
+		if white
+			+e('img').img(src='/assets/images/logo-white.png')
+		else
+			+e('img').img(src='/assets/images/logo.png')
+		+e('span').text(class=white && 'logo__text_white') Правовой центр ООО «Радомас»

@@ -4,6 +4,7 @@ include ../page/page
 include ../scripts/scripts
 include ../header/header
 include ../feedback-form/feedback-form
+include ../footer/footer
 
 doctype html
 html(lang='ru')
@@ -14,4 +15,5 @@ html(lang='ru')
 		)
 		block content
 		+feedback-form
+		+footer
 		+scripts(['app.min.js'])

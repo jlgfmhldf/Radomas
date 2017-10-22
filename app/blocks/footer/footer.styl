@@ -1,0 +1,53 @@
+.footer
+	display block
+	height: 194px
+	background-color: #282828
+	color: #fff
+
+	&__copy-text
+		margin-top: 32px
+		font-size: 14px
+		line-height: 1.5
+		color: #fff
+
+	&__yellow-link
+		font-size: 14px
+		line-height: 1.5
+		color: #efce48
+		text-decoration: underline
+
+	&__link
+		margin-bottom: 20px
+		display: block
+		font-size: 12px
+		color: #fff
+		text-decoration: none
+
+	&__contact
+		margin-bottom: 23px
+		display: flex
+		align-items: center
+		font-size: 16px
+		line-height: 1.12
+		color: #fff
+		background-repeat: no-repeat
+		background-position 0 center
+
+		&::before
+			content: ''
+			display: inline-block
+			background-repeat: no-repeat
+			background-position 0 center
+
+		&_email::before
+			size: 23px 16px
+			background-image: url(../images/footer-email.png)
+
+		&_phone::before
+			size: 19px 19px
+			background-image: url(../images/footer-phone.png)
+
+		&_position::before
+			size: 27px 24px
+			background-image: url(../images/footer-position.png)
+
