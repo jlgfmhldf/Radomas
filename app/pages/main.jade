@@ -2,6 +2,7 @@ extends /blocks/layout-default/layout-default
 
 include ../blocks/main-slider/main-slider
 include ../blocks/main-services/main-services
+include ../blocks/main-works/main-works
 
 block head
 	- var pageTitle = 'Главная';
@@ -12,3 +13,5 @@ block content
 			+main-slider
 		+e.services
 			+main-services
+		+e.works
+			+main-works

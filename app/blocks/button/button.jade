@@ -2,8 +2,9 @@ mixin button(data)
 	- data = data || {}
 	- color = data.color || 'yellow'
 	- size = data.size || 'medium'
+	- tag = data.tag || 'button'
 
-	+b.button(
+	+b(tag).button(
 		class=`button_color_${color}`
 		class=`button_size_${size}`
 	)&attributes(attributes)
