@@ -1,0 +1,45 @@
+include ../button/button
+
+mixin feedback-form()
+	+b.feedback-form&attributes(attributes)
+		.content.row.top-xs
+			+e.text-content.col-xs-6
+				+e.title Свяжитесь с нами
+				+e.text Мы ответим на все ваши вопросы!
+
+				+e.small-text По телефону
+				+e('a').phone(href='tel:+7 (495) 921-45-39') +7 (495) 921-45-39
+
+				+e.button
+					+button({
+						size: 'small'
+					}) Заказать звонок
+
+				+e.small-text На почту
+				+e('a').email(href='mailto:info@radomas.ru') info@radomas.ru
+
+			+e.form-block.col-xs-6
+				+e.title Форма обратной связи
+
+				+e.form
+					+e.form-row.row
+						.col-xs-6
+							+e.input-title Как Вас зовут?
+							+e('input').input(placeholder='Введите имя')
+
+						.col-xs-6
+							+e.input-title Телефон или эл. Почта
+							+e('input').input(placeholder='Введите почту')
+
+					+e.form-row.row
+						.col-xs
+							+e.input-title Ваше сообщение
+							+e('textarea').textarea
+
+					+e.form-row.row
+						+button({
+							size: 'medium'
+						}) Отправить
+
+
+
