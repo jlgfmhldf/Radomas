@@ -20,4 +20,6 @@ const sliderOptions = {
 	},
 }
 
+/* eslint-disable no-unused-vars */
 const swiper = new Swiper($slider, sliderOptions)
+
