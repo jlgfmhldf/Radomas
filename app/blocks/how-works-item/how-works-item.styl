@@ -1,7 +1,7 @@
 .how-works-item
 
-
 	&__circle
+		position: relative
 		display: flex
 		size: 113px
 		border: solid 2px #3b3b3b
@@ -9,6 +9,21 @@
 		justify-content: center
 		align-items: center
 		margin: auto
+
+		&::before
+			content: attr(data-count)
+			position: absolute
+			right: 3px
+			top: 2px
+			display: block
+			size: 27px
+			background-color: #3b3b3b
+			font-size: 16px
+			font-family: $GothamProBold
+			line-height: 1.9
+			color: #fff
+			border-radius: 50%
+			text-align: center
 
 	&__title
 		margin-y 16px 10px
