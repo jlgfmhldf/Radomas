@@ -3,6 +3,7 @@
 	display block
 	size 100% 540px
 	background #ec9146 // TODO убрать
+	overflow hidden
 
 	&__items
 		display: flex
@@ -11,6 +12,8 @@
 	&__item
 		display: flex
 		size: 100%
+		background-size: cover
+		background-repeat: no-repeat
 
 	&__slide-content
 		margin: auto
@@ -60,7 +63,7 @@
 		&:last-child
 			margin-right: 0
 
-	&__circles
+	&__bullets
 		position: absolute
 		bottom: 27px
 		left: 0
@@ -98,6 +101,7 @@
 		size: 41px 29px
 		background-image: url(../images/arrow.png)
 		background-size: contain
+		cursor: pointer
 
 		&_left
 			left: -87px

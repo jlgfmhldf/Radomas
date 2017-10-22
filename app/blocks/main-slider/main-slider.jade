@@ -1,17 +1,15 @@
 include main-slider-item
 
 mixin main-slider()
-	+b.main-slider.js-slider&attributes(attributes)
+	+b.main-slider.js-main-slider&attributes(attributes)
 		+e.arrows
-			+e.arrow_left
-			+e.arrow_right
+			+e.arrow_left.swiper-button-prev
+			+e.arrow_right.swiper-button-next
 
-		+e.circles
-			+e.circle_active
-			+e.circle
-			+e.circle
-			+e.circle
+		+e.circles.swiper-pagination
 
-		+e('ul').items
+		+e.items.swiper-wrapper
 			+main-slider-item
-
+			+main-slider-item
+			+main-slider-item
+			+main-slider-item
