@@ -1,0 +1,37 @@
+mixin services-list()
+	+b.services-list&attributes(attributes)
+		.row.around-xs
+
+			+e.item.col-xs-3
+				+e.img(src='/assets/images/services-1.png')
+				+e.title
+					| Оформление
+					br
+					| лицензий
+
+				+e('a').gray-link(href=jv0) Пожарная лицензия МЧС
+				+e('a').gray-link(href=jv0) Допуск СРО
+				+e('a').gray-link(href=jv0) Аккредитация МЧС
+
+
+			+e.item.col-xs-3
+				+e.img(src='/assets/images/services-2.png')
+				+e.title
+					| Регистрация
+					br
+					| юридических лиц
+
+				+e('a').gray-link(href=jv0) Некоммерческие организации
+				+e('a').gray-link(href=jv0) Регистрация ООО, АО
+
+			+e.item.col-xs-3
+				+e.img(src='/assets/images/services-3.png')
+				+e.title
+					| Оформление
+					br
+					| лицензий
+
+				+e('a').gray-link(href=jv0) Регистрация акций
+				+e('a').gray-link(href=jv0) Арбитражные споры
+				+e('a').gray-link(href=jv0) Закрытие ООО, фирмы
+
