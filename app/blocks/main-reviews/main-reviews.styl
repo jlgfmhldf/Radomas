@@ -1,0 +1,82 @@
+.main-reviews
+	display block
+	padding-y 40px
+
+	&__subtitle
+		margin-top: 10px
+
+	&__reviews
+		margin-top: 30px
+
+	&__review
+		margin-right: 10px
+		padding-x: 20px
+		padding-top: 25px
+		padding-bottom: 16px
+		min-height: 350px
+		display: flex
+		flex-direction: column
+		background-color: #fff
+		border: solid 1px rgba(0, 1, 1, .07)
+
+		&:last-child
+			margin-right: 0
+
+	&__review-title
+		margin-bottom: 13px
+
+	&__text
+		padding-bottom: 10px
+		font-family: $GothamProLight
+		font-size: 13px
+		line-height: 1.4
+		letter-spacing: -.6px
+		color: rgba(31, 31, 31, .61)
+
+	&__review-text-content
+		height: 80%
+		overflow: hidden
+
+	&__author
+		padding-top: 14px
+		//height: 20%
+		border-top: 1px solid rgba(#000, .1)
+
+	&__author-photo
+		display: block
+		size: 48px
+		border-radius: 50%
+
+	&__author-title
+		font-size: 16px
+		line-height: 1.1
+		letter-spacing: -0.4px
+		color: #31251f
+
+	&__author-profession
+		margin-top: 7px
+		display: block
+		font-family: $GothamProLight
+		font-size: 13px
+		line-height: 1.29
+		letter-spacing: -0.3px
+		text-align: left
+		color: rgba(49, 37, 31, 0.5)
+
+	&__view-more
+		margin-top: 37px
+		font-size: 18px
+		line-height: 2
+		letter-spacing: -.4px
+		color: #2b71ff
+
+		&::before
+			content: ''
+			display: block
+			size: 30px 29px
+			background-image: url(../images/view-more.png)
+
+		&-text
+			display: block
+			margin-left: 8px
+

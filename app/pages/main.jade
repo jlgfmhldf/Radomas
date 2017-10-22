@@ -4,6 +4,7 @@ include ../blocks/main-slider/main-slider
 include ../blocks/main-services/main-services
 include ../blocks/main-works/main-works
 include ../blocks/blue-slider/blue-slider
+include ../blocks/main-reviews/main-reviews
 
 block head
 	- var pageTitle = 'Главная';
@@ -18,3 +19,5 @@ block content
 			+main-works
 		+e.blue-slider
 			+blue-slider
+		+e.reviews
+			+main-reviews
