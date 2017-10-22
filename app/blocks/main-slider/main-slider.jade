@@ -1,0 +1,17 @@
+include main-slider-item
+
+mixin main-slider()
+	+b.main-slider.js-slider&attributes(attributes)
+		+e.arrows
+			+e.arrow_left
+			+e.arrow_right
+
+		+e.circles
+			+e.circle_active
+			+e.circle
+			+e.circle
+			+e.circle
+
+		+e('ul').items
+			+main-slider-item
+

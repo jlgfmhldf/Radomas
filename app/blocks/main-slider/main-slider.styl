@@ -1,0 +1,109 @@
+.main-slider
+	position: relative
+	display block
+	size 100% 540px
+	background #ec9146 // TODO убрать
+
+	&__items
+		display: flex
+		height: 100%
+
+	&__item
+		display: flex
+		size: 100%
+
+	&__slide-content
+		margin: auto
+
+	&__text
+		font-family: $GothamProLight
+		font-size: 17px
+		line-height: 1.4
+		letter-spacing: -.4px
+		color: #333
+
+	&__title
+		margin-y: 20px 15px
+		display: block
+		font-family: $GothamProMedium
+		font-size: 55px
+		line-height: .94
+		letter-spacing: -1.1px
+		color: #333
+
+	&__bold
+		font-family: $GothamProBold
+
+	&__text-content
+		width: 550px
+
+	&__icons-text-list
+		margin-y: 44px 40px
+		display: flex
+
+	&__icons-text
+		display: flex
+		margin-right: 56px
+
+		&:last-child
+			margin-right: 0
+
+	&__icons-text-image
+		margin-right: 10px
+
+	&__buttons
+		display: flex
+
+	&__button
+		margin-right: 13px
+
+		&:last-child
+			margin-right: 0
+
+	&__circles
+		position: absolute
+		bottom: 27px
+		left: 0
+		right: 0
+		display: flex
+		justify-content: center
+
+	&__circle
+		margin-right: 10px
+		display: block
+		size: 15px 16px
+		background-color: rgba(#fff, .5)
+		border-radius: 50%
+		cursor: pointer
+
+		&:last-child
+			margin-right: 0
+
+		&_active
+			background-color: transparent
+			border: solid 2px #ffffff
+
+	&__arrows
+		width: $contentSize
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		margin: auto
+		display: flex
+		align-items: center
+
+	&__arrow
+		position: absolute
+		size: 41px 29px
+		background-image: url(../images/arrow.png)
+		background-size: contain
+
+		&_left
+			left: -87px
+
+		&_right
+			right: -87px
+			transform rotate(180deg)
+
+

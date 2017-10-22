@@ -1,8 +1,11 @@
 extends /blocks/layout-default/layout-default
 
+include ../blocks/main-slider/main-slider
+
 block head
 	- var pageTitle = 'Главная';
 
-
 block content
-
+	+b.main
+		+e.slider
+			+main-slider
