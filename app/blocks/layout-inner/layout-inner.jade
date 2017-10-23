@@ -9,6 +9,7 @@ include ../breadcrumbs/breadcrumbs
 include ../aside-menu/aside-menu
 include ../aside-form/aside-form
 include ../aside-useful/aside-useful
+include ../main-content/main-content
 
 doctype html
 html(lang='ru')
@@ -30,9 +31,10 @@ html(lang='ru')
 						+e.aside-form
 							+aside-useful
 					+e.main
-						div(style='width: 100%; height: 900px; background: red;')
+						+main-content
+							block content
 
-		block content
+
 
 		+e.bottom
 			+feedback-form
