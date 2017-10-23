@@ -1,4 +1,5 @@
 .footer
+	padding-top: 35px
 	display block
 	height: 194px
 	background-color: #282828
@@ -35,19 +36,56 @@
 
 		&::before
 			content: ''
+			width: 23px
+			margin-right: 12px
 			display: inline-block
 			background-repeat: no-repeat
 			background-position 0 center
 
 		&_email::before
-			size: 23px 16px
+			height: 16px
 			background-image: url(../images/footer-email.png)
 
 		&_phone::before
-			size: 19px 19px
+			height: 19px
 			background-image: url(../images/footer-phone.png)
 
 		&_position::before
-			size: 27px 24px
+			height: 24px
 			background-image: url(../images/footer-position.png)
+
+	&__social
+		flex-basis: 12%;
+		max-width: 12%;
+
+
+	&__social-text
+		display: block
+		margin-bottom: 9px
+		font-size: 14px
+		color: #fff
+
+	&__social-wrapper
+		display: flex
+
+	&__social-link
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		size: 38px
+		border: solid 2px #ffffff
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center
+		margin-right: 7px
+
+		&::before
+			content: ''
+			display: block
+
+		&_vk::before
+			sprite $vk
+
+		&_fb::before
+			sprite $fb
 
