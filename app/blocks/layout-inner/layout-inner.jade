@@ -6,16 +6,30 @@ include ../header/header
 include ../feedback-form/feedback-form
 include ../footer/footer
 include ../breadcrumbs/breadcrumbs
+include ../aside-menu/aside-menu
 
 doctype html
 html(lang='ru')
 	include ../head/head
 	+page
-		+header(
-			getData('menu')
-		)
-		+breadcrumbs
+		+e.top
+			+header(
+				getData('menu')
+			)
+			+breadcrumbs
+		+e.content
+			.content
+				.row.between-xs
+					+e.aside.col-xs-3
+						+aside-menu
+					+e.main.col-xs-9
+						div(style='width: 100%; height: 900px; background: red;')
+
+
 		block content
-		+feedback-form
-		+footer
+
+		+e.bottom
+			+feedback-form
+			+footer
+
 		+scripts(['app.min.js'])
