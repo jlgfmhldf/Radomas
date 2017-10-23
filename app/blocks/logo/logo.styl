@@ -1,8 +1,14 @@
 .logo
 	display block
 
-	&__img
+	&::before
+		content: ''
 		display: block
+		sprite $logo
+
+	&_white::before
+		sprite $logo_white
+
 
 	&__text
 		display: block

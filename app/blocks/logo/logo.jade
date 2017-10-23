@@ -2,9 +2,5 @@ mixin logo(data)
 	- data = data || {}
 	- white = data.white || false
 
-	+b.logo&attributes(attributes)
-		if white
-			+e('img').img(src='assets/images/logo-white.png')
-		else
-			+e('img').img(src='assets/images/logo.png')
+	+b.logo(class=white && 'logo_white')&attributes(attributes)
 		+e('span').text(class=white && 'logo__text_white') Правовой центр ООО «Радомас»
