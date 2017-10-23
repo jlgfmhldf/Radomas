@@ -1,4 +1,5 @@
 include ../button/button
+include ../input/input
 
 mixin feedback-form()
 	+b.feedback-form&attributes(attributes)
@@ -25,11 +26,11 @@ mixin feedback-form()
 					+e.form-row.row
 						.col-xs-6
 							+e.input-title Как Вас зовут?
-							+e('input').input(placeholder='Введите имя')
+							+input('big').input(placeholder='Введите имя')
 
 						.col-xs-6
 							+e.input-title Телефон или эл. Почта
-							+e('input').input(placeholder='Введите почту')
+							+input('big').input(placeholder='Введите почту')
 
 					+e.form-row.row
 						.col-xs

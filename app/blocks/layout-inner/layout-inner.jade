@@ -7,6 +7,7 @@ include ../feedback-form/feedback-form
 include ../footer/footer
 include ../breadcrumbs/breadcrumbs
 include ../aside-menu/aside-menu
+include ../aside-form/aside-form
 
 doctype html
 html(lang='ru')
@@ -20,9 +21,12 @@ html(lang='ru')
 		+e.content
 			.content
 				.row.between-xs
-					+e.aside.col-xs-3
-						+aside-menu
-					+e.main.col-xs-9
+					+e.aside
+						+e.aside-menu
+							+aside-menu
+						+e.aside-form
+							+aside-form
+					+e.main
 						div(style='width: 100%; height: 900px; background: red;')
 
 
