@@ -1,0 +1,27 @@
+include ../button/button
+
+mixin aside-useful()
+	+b.aside-useful&attributes(attributes)
+		+e.title Полезные материалы
+		+e.text То, что может быть вам полезно!
+		+e('ul').list
+			+e('li').list-item
+				+e('a').link(href=jv0) Что нужно знать начинающему предпринимателю!
+
+
+			+e('li').list-item
+				+e('a').link(href=jv0) Что нужно знать начинающему предпринимателю!
+
+
+			+e('li').list-item
+				+e('a').link(href=jv0) Что нужно знать начинающему предпринимателю!
+
+
+			+e('li').list-item
+				+e('a').link(href=jv0) Что нужно знать начинающему предпринимателю!
+
+		+e.button
+			+button({
+				size: 'small'
+			}) Заказать обратный звонок
+

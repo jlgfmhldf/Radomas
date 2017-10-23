@@ -8,6 +8,7 @@ include ../footer/footer
 include ../breadcrumbs/breadcrumbs
 include ../aside-menu/aside-menu
 include ../aside-form/aside-form
+include ../aside-useful/aside-useful
 
 doctype html
 html(lang='ru')
@@ -26,9 +27,10 @@ html(lang='ru')
 							+aside-menu
 						+e.aside-form
 							+aside-form
+						+e.aside-form
+							+aside-useful
 					+e.main
 						div(style='width: 100%; height: 900px; background: red;')
-
 
 		block content
 
