@@ -1,6 +1,7 @@
 extends /blocks/layout-inner/layout-inner
 include ../blocks/main-content/main-content-item
 include ../blocks/services-description/services-description
+include ../blocks/services-license-benefits/services-license-benefits
 
 block head
 	- var pageTitle = 'Услуги';
@@ -9,3 +10,6 @@ block content
 	+b.services
 		+main-content-item
 			+services-description
+
+		+main-content-item
+			+services-license-benefits
