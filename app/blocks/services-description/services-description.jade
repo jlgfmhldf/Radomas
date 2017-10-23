@@ -1,0 +1,23 @@
+include ../title/title
+include ../main-text/main-text
+include ../services-list/services-list
+include ../button/button
+
+mixin services-description()
+	+b.services-description&attributes(attributes)
+		+e.title
+			+title Качественные услуги по оформлению документов
+
+		+e.text
+			+main-text.
+				Правовой Центр ООО «Радомас» предоставляет высококвалифицированные услуги по оформлению документов для: Регистрации и закрытия юридических лиц.
+				Оформления лицензий на монтаж и обслуживание пожарных сигнализаций, допуск СРО, предоставления услуг связи, аккредитации в МЧС и прочих официальных бумаг.
+
+		+e.services-list
+			+services-list
+
+
+		+e.button
+			+button({
+				size: 'big',
+			}) Подать заявку
