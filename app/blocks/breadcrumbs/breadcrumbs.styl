@@ -1,0 +1,27 @@
+.breadcrumbs
+	padding-y: 13px
+	display block
+	height: 42px
+	background-color: #ffc560
+
+	&__item
+		display: inline-block
+		font-size: 14px
+		line-height: 1.4
+		color: #3a3a3a
+		text-decoration: none
+
+		&_root
+			font-family: $GothamProBold
+
+
+		&::after
+			content: ''
+			display: inline-block
+			sprite $breadcrumbs_arrow
+			margin-left: 12px
+			margin-right: 9px
+
+		&:last-child::after
+			display: none
+
