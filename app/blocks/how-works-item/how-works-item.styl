@@ -1,13 +1,14 @@
 .how-works-item
+	display: flex
+	justify-content: center
+	flex-direction: column
 
 	&__circle
 		position: relative
-		display: flex
+		centerContent()
 		size: 113px
 		border: solid 2px #3b3b3b
 		border-radius: 50%
-		justify-content: center
-		align-items: center
 		margin: auto
 
 		&::before
@@ -24,6 +25,24 @@
 			color: #fff
 			border-radius: 50%
 			text-align: center
+
+		&::after
+			content: ''
+			display: block
+
+		&_1::after
+			sprite $how_works_1
+
+		&_2::after
+			sprite $how_works_2
+
+		&_3::after
+			sprite $how_works_3
+
+		&_4::after
+			sprite $how_works_4
+
+
 
 	&__title
 		margin-top: 16px

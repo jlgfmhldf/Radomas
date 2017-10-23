@@ -47,14 +47,22 @@
 		display: flex
 
 	&__icons-text
-		display: flex
+		centerContent()
 		margin-right: 56px
+
+		&::before
+			content: ''
+			display: block
+			margin-right: 10px
+
+		&_time::before
+			sprite: $time
+
+		&_money::before
+			sprite: $money
 
 		&:last-child
 			margin-right: 0
-
-	&__icons-text-image
-		margin-right: 10px
 
 	&__icons-text-content
 		font-family: $GothamProMedium
@@ -107,10 +115,9 @@
 
 	&__arrow
 		position: absolute
-		size: 41px 29px
-		background-image: url(../images/arrow.png)
-		background-size: contain
+		sprite: $arrow
 		cursor: pointer
+		background-size: auto
 
 		&_left
 			left: -87px

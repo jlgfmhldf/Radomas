@@ -20,16 +20,19 @@
 
 	&__info-icon
 		size: 48px
+		centerContent()
 		background-color: #327fd6
 		border-radius: 50%
-		background-repeat no-repeat
-		background-position center
 
-		&_position
-			background-image: url(../images/position.png)
+		&::before
+			content: ''
+			display: block
 
-		&_phone
-			background-image: url(../images/phone.png)
+		&_position::before
+			sprite: $position
+
+		&_phone::before
+			sprite: $phone
 
 	&__info-content
 		margin-left: 14px
