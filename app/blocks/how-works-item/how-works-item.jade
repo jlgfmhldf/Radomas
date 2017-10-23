@@ -1,9 +1,0 @@
-mixin how-works-item(data)
-	- data = data || {}
-
-	+b.how-works-item&attributes(attributes)
-		+e.circle(data-count=data.count)
-			+e.img(src=data.src)
-		+e.title=data.title
-		+e.text
-			block
