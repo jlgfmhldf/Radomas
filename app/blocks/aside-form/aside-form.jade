@@ -1,0 +1,26 @@
+include ../input/input
+include ../button/button
+
+mixin aside-form()
+	+b.aside-form&attributes(attributes)
+		+e.title Свяжитесь с нами
+
+		+e.number-text
+			| Контактный номер:
+
+		+e.number-phone +7(495)921-45-39
+
+		+e.big-title
+			| Мы можем сами
+			| связаться с вами:
+
+		+e.input
+			+input()(placeholder='Введите имя')
+
+		+e.input
+			+input()(placeholder='+7')
+
+		+e.button
+			+button({
+				size: 'small'
+			}) Заказать обратный звонок
