@@ -1,6 +1,9 @@
 include ../how-works-item/how-works-item
 
-mixin how-works-list(vertical)
+mixin how-works-list(data)
+	- data = data || {}
+	- vertical = data.vertical
+
 	+b.how-works-list.row&attributes(attributes)
 		if !vertical
 			+e.item.col-xs
@@ -36,4 +39,37 @@ mixin how-works-list(vertical)
 					count: 4,
 					src: 'assets/images/how-works-4.png'
 				})
-		// TODO vertical
+		else
+			.row
+				+e.item.col-xs
+					+how-works-item({
+						title: 'Заявка',
+						count: 1,
+						src: 'assets/images/how-works-1.png'
+					}) Оставляете заявку на нашем сайте. <br/> Наш менеджер свяжется с Вами для уточнения деталей.
+
+				+e.circles
+
+				+e.item.col-xs
+					+how-works-item({
+						title: 'Консультация',
+						count: 2,
+						src: 'assets/images/how-works-2.png'
+					}) Уточнение специалистом наличия документов согласно перечня.
+
+			.row
+				+e.item.col-xs
+					+how-works-item({
+						title: 'Договор и оплата',
+						count: 3,
+						src: 'assets/images/how-works-3.png'
+					}) Подписываем договор, предоплата 70%. Оплачиваете удобным для Вас способом.
+
+				+e.circles
+
+				+e.item.col-xs
+					+how-works-item({
+						title: 'Получение лицензии',
+						count: 4,
+						src: 'assets/images/how-works-4.png'
+					})

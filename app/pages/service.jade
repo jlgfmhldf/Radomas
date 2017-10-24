@@ -10,6 +10,7 @@ include ../blocks/service-info/service-info
 include ../blocks/service-folding-info/service-folding-info
 include ../blocks/services-button-block/services-faq
 include ../blocks/services-button-block/services-price-emercom
+include ../blocks/service-how-works/service-how-works
 
 block head
 	- var pageTitle = 'Услуга';
@@ -33,6 +34,9 @@ block content
 
 		+main-content-item
 			+service-faq
+
+		+main-content-item
+			+service-how-works
 
 		+main-content-item
 			+services-license-benefits

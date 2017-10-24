@@ -1,0 +1,57 @@
+include ../title/title
+include ../subtitle/subtitle
+include ../how-works-list/how-works-list
+include ../how-works-item/how-works-item
+include ../how-works-item/circles
+include ../button/button
+
+mixin service-how-works()
+	+b.service-how-works&attributes(attributes)
+		+e.title
+			+title Как мы работаем?
+
+		+e.subtitle
+			+subtitle Порядок и этапы оформления
+
+		+e.items
+			+e.row_indent.row.center-xs
+				+e.item.col-xs-4
+					+how-works-item({
+						title: 'Заявка',
+						count: 1,
+						src: 'assets/images/how-works-1.png'
+					}) Оставляете заявку на нашем сайте. <br/> Наш менеджер свяжется с Вами для уточнения деталей.
+
+				+e.circles.col-xs-1
+					+circles
+
+				+e.item.col-xs-4
+					+how-works-item({
+						title: 'Консультация',
+						count: 2,
+						src: 'assets/images/how-works-2.png'
+					}) Уточнение специалистом наличия документов согласно перечня.
+
+			+e.row.row.center-xs
+				+e.item.col-xs-4
+					+how-works-item({
+						title: 'Договор и оплата',
+						count: 3,
+						src: 'assets/images/how-works-3.png'
+					}) Подписываем договор, предоплата 70%. Оплачиваете удобным для Вас способом.
+
+
+				+e.circles.col-xs-1
+					+circles
+
+				+e.item.col-xs-4
+					+how-works-item({
+						title: 'Получение лицензии',
+						count: 4,
+						src: 'assets/images/how-works-4.png'
+					})
+
+			+e.button.row.center-xs
+				+button({
+					size: 'big'
+				}) Подать заявку
