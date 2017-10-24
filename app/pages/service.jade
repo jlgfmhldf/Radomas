@@ -6,6 +6,7 @@ include ../blocks/services-questions/services-questions
 include ../blocks/services-legal-center/services-legal-center
 include ../blocks/service-emercome-license/service-emercome-license
 include ../blocks/service-prices/service-prices
+include ../blocks/service-info/service-info
 
 block head
 	- var pageTitle = 'Услуга';
@@ -17,6 +18,9 @@ block content
 
 		+main-content-item
 			+service-prices
+
+		+main-content-item
+			+service-info
 
 		+main-content-item
 			+services-license-benefits

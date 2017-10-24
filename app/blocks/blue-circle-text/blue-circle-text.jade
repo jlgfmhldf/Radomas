@@ -1,0 +1,10 @@
+include ../main-text/main-text
+
+mixin blue-circle-text(imgPath)
+	+b.blue-circle-text.row.middle-xs&attributes(attributes)
+		.col-xs-1
+			+e.icon
+				+e.img(src=imgPath)
+		+e.text.col-xs
+			+main-text
+				block
