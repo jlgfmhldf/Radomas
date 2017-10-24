@@ -2,12 +2,13 @@ extends /blocks/layout-inner/layout-inner
 include ../blocks/main-content/main-content-item
 include ../blocks/services-description/services-description
 include ../blocks/services-license-benefits/services-license-benefits
-include ../blocks/services-questions/services-questions
+include ../blocks/services-button-block/services-questions
 include ../blocks/services-legal-center/services-legal-center
 include ../blocks/service-emercome-license/service-emercome-license
 include ../blocks/service-prices/service-prices
 include ../blocks/service-info/service-info
 include ../blocks/service-folding-info/service-folding-info
+include ../blocks/services-button-block/services-faq
 
 block head
 	- var pageTitle = 'Услуга';
@@ -28,6 +29,9 @@ block content
 
 		+main-content-item
 			+service-folding-info
+
+		+main-content-item
+			+service-faq
 
 		+main-content-item
 			+services-license-benefits
