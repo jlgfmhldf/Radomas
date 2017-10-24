@@ -3,9 +3,11 @@ mixin button(data)
 	- color = data.color || 'yellow'
 	- size = data.size || 'medium'
 	- tag = data.tag || 'button'
+	- href = data.href || false
 
 	+b(tag).button(
 		class=`button_color_${color}`
 		class=`button_size_${size}`
+		href=href
 	)&attributes(attributes)
 		block

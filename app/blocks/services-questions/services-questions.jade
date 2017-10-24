@@ -1,0 +1,17 @@
+include ../button/button
+
+mixin services-questions()
+	+b.services-questions.row.middle-xs&attributes(attributes)
+		+e.icon
+		.col-xs
+			+e('p').text
+				| Готовы ответить на любые ваши вопросы по телефону: +7(495)921-45-39 или пишите на
+				br
+				+e('a').link(href=jv0) radomas@rambler.ru
+
+		+e.button
+			+button({
+				size: 'big',
+				tag: 'a',
+				href: 'mailto:radomas@rambler.ru'
+			}) Написать нам
