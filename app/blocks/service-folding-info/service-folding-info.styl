@@ -2,6 +2,7 @@
 	display block
 
 	&__title
+		margin-top: 8px
 		margin-bottom: 7px
 		display: block
 		font-family: $GothamProMedium
@@ -10,9 +11,12 @@
 		text-transform: uppercase
 
 	&__fold-link
+		margin-bottom: 18px
+		display: block
 		font-size: 14px
 		color: #327fd6
 		text-decoration: underline
+		cursor: pointer
 
 		&::after
 			content: ''
@@ -24,11 +28,14 @@
 			transform rotate(180deg)
 
 	&__folding-text
-		margin-top: 18px
 		display: block
 
+		&_hidden
+			height: 0
+			overflow: hidden
+
 	&__item
-		margin-bottom: 38px
+		margin-bottom: 25px
 
 		&:last-child
 			margin-bottom: 0

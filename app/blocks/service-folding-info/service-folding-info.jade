@@ -6,12 +6,10 @@ mixin service-folding-info()
 
 			.col-xs
 				+e.title Документы для оформления лицензии
-				+e.fold-link_hide.js-fold-btn(data-id='documents') Раскрыть
-				+e.folding-text_hidden
+				+e.fold-link.js-fold-btn(data-id='documents') Раскрыть
+				+e.folding-text_hidden(data-for='documents')
 					+main-text('div')
 						| Лицензия на Деятельность по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений включает в себя следующие виды работ:
-
-						| test
 
 						ol.numbers-list
 
@@ -37,8 +35,8 @@ mixin service-folding-info()
 
 			.col-xs
 				+e.title Документы для оформления лицензии
-				+e.fold-link.js-fold-btn(data-id='documents') Скрыть
-				+e.folding-text_hidden
+				+e.fold-link.js-fold-btn(data-id='documents2') Раскрыть
+				+e.folding-text_hidden(data-for='documents2')
 					+main-text('div')
 						| Лицензия на Деятельность по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений включает в себя следующие виды работ:
 
