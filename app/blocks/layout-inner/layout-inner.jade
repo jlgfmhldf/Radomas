@@ -8,7 +8,6 @@ include ../footer/footer
 include ../breadcrumbs/breadcrumbs
 include ../aside-menu/aside-menu
 include ../aside-form/aside-form
-include ../aside-useful/aside-useful
 include ../main-content/main-content
 
 doctype html
@@ -28,8 +27,8 @@ html(lang='ru')
 							+aside-menu
 						+e.aside-form
 							+aside-form
-						+e.aside-form
-							+aside-useful
+
+						block aside
 					+e.main
 						+main-content
 							block content

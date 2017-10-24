@@ -1,0 +1,28 @@
+include ../title/title
+include ../main-text/main-text
+include ../button/button
+
+mixin service-emercome-license()
+	+b.service-emercome-license&attributes(attributes)
+		+e.title()
+			+title({
+				align: 'left'
+			}) Пожарная лицензия МЧС
+
+		.row.middle-xs
+			.col-xs-4
+				+e.icon
+					+e.icon-wrapper
+						+e.icon-img(src='/assets/images/licence-2.png')
+
+			.col-xs-8
+				+e.content
+					+e.text
+						+main-text
+							| Действующее сегодня законодательство обязывает оформлять данную документацию тех, кто занимается определенной деятельностью. В частности, пожарная лицензия МЧС необходима, если компания специализируется на монтаже, техническом обслуживании и ремонтно-восстановительных работах систем противопожарной защиты зданий и сооружений.
+							| Оформить документацию быстро и без лишних бюрократических проблем помогут наши специалисты.
+
+					+e.button
+						+button({
+							size: 'big'
+						}) Заказать лицензию мчс россии

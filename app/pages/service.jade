@@ -4,19 +4,17 @@ include ../blocks/services-description/services-description
 include ../blocks/services-license-benefits/services-license-benefits
 include ../blocks/services-questions/services-questions
 include ../blocks/services-legal-center/services-legal-center
-include ../aside-useful/aside-useful
+include ../blocks/service-emercome-license/service-emercome-license
 
 block head
-	- var pageTitle = 'Услуги';
-
-block aside
-	+e.aside-form
-		+aside-useful
+	- var pageTitle = 'Услуга';
 
 block content
 	+b.services
 		+main-content-item
-			+services-description
+			+service-emercome-license
+
+
 
 		+main-content-item
 			+services-license-benefits
