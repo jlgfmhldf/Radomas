@@ -1,0 +1,56 @@
+.service-prices
+	display block
+
+	&__icon
+		size: 159px
+		margin: auto
+		centerContent()
+		position: relative
+
+		&::before,
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+
+		&::before
+			size: 101px
+			background-color: #f4f4f4
+			border-radius: 50%
+
+		&::after
+			size: 159px
+			background-color: rgba(#e8e8e8, .15)
+			border-radius: 50%
+
+	&__icon-img
+		position: relative
+		z-index: 100
+
+	&__text
+		margin-bottom: 15px
+		display: block
+		font-size: 18px
+		line-height: 1
+		text-align: center
+		color: #1f1f1f
+
+	&__bold
+		font-family: $GothamProBold
+		font-size: 18px
+		text-align: center
+		color: #1f1f1f
+
+	&__price
+		margin-top: 5px
+		display: block
+		font-family: $GothamProBold
+		font-size: 30px
+		text-align: center
+		color: #327fd6
+
+
