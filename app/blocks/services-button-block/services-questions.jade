@@ -1,8 +1,8 @@
-mixin services-button-block()
+mixin services-questions()
 	+b.services-button-block.row.middle-xs&attributes(attributes)
 		+e.icon(src='/assets/images/services-email.png')
 		.col-xs
-			+e('p').text
+			+e('p').bold-text
 				| Готовы ответить на любые ваши вопросы по телефону: +7(495)921-45-39 или пишите на
 				br
 				+e('a').link(href=jv0) radomas@rambler.ru
