@@ -9,6 +9,19 @@ import('helpers/svg-size')
 @import '../../node_modules/flexboxgrid/dist/flexboxgrid.css'
 import('../blocks/**/*')
 
+.numbers-list
+	list-style: none
+	margin-y: 10px
+	counter-reset: list 0
+
+	li
+		margin-y: 10px
+
+		&::before
+			counter-increment: list
+			content: counter(list) ". ";
+			font-family: $GothamProMedium
+
 .bold
 	font-family: $GothamProBold
 

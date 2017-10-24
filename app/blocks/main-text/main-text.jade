@@ -1,3 +1,3 @@
-mixin main-text()
-	+b('p').main-text&attributes(attributes)
+mixin main-text(tag)
+	+b(tag || 'p').main-text&attributes(attributes)
 		block
