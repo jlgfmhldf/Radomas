@@ -1,0 +1,44 @@
+.services-legal-center
+	display block
+
+	&__bold-text
+		margin-top: 13px
+		margin-bottom: 30px
+		font-size: 14px
+		line-height: 1.3
+		color: #1f1f1f
+
+	&__icon
+		centerContent()
+		size: 48px
+		background-color: #327fd6
+		border-radius: 50%
+
+		&::before
+			content: ''
+			display: block
+
+		&_1::before
+			sprite $legal_center_1
+
+		&_2::before
+			sprite $legal_center_2
+
+		&_3::before
+			sprite $legal_center_3
+
+		&_4::before
+			sprite $legal_center_4
+
+		&_5::before
+			sprite $legal_center_5
+
+
+	&__list-item
+		margin-y: 20px
+
+		&:last-child
+			margin-bottom: 0
+
+	&__text
+		margin-left: 10px

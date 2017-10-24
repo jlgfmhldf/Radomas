@@ -3,6 +3,7 @@ include ../blocks/main-content/main-content-item
 include ../blocks/services-description/services-description
 include ../blocks/services-license-benefits/services-license-benefits
 include ../blocks/services-questions/services-questions
+include ../blocks/services-legal-center/services-legal-center
 
 block head
 	- var pageTitle = 'Услуги';
@@ -17,3 +18,6 @@ block content
 
 		+main-content-item
 			+services-questions
+
+		+main-content-item
+			+services-legal-center
