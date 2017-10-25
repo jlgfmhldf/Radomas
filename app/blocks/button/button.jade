@@ -4,6 +4,7 @@ mixin button(data)
 	- border = data.border || false
 	- hoverColor = data.hoverColor || false
 	- size = data.size || 'medium'
+	- style = data.style || false
 	- tag = data.tag || 'button'
 	- href = data.href || false
 
@@ -12,6 +13,7 @@ mixin button(data)
 		class=`button_size_${size}`
 		class=`button_hoverColor_${hoverColor}`
 		class=`button_border_${border}`
+		class=`button_style_${style}`
 		href=href
 	)&attributes(attributes)
 		block

@@ -1,0 +1,20 @@
+include ../title/title
+include ./articles-item
+include ../pages-nav/pages-nav
+
+mixin articles()
+	+b.articles&attributes(attributes)
+		+title({ align: 'left' }) Статьи
+
+		+e.items
+			+e.item
+				+articles-item
+			+e.item
+				+articles-item
+			+e.item
+				+articles-item
+			+e.item
+				+articles-item
+
+		+e.nav
+			+pages-nav
