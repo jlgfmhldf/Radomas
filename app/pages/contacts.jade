@@ -1,0 +1,13 @@
+extends /blocks/layout-inner/layout-inner
+include ../blocks/main-content/main-content
+include ../blocks/main-content/main-content-item
+include ../blocks/contacts/contacts
+
+
+block head
+	- var pageTitle = 'Контакты';
+
+block content
+	+main-content
+		+main-content-item
+			+contacts

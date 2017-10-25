@@ -35,7 +35,10 @@ mixin feedback-form()
 					+e.form-row.row
 						.col-xs
 							+e.input-title Ваше сообщение
-							+e('textarea').textarea
+							+e.textarea
+								+input({
+									tag: 'textarea'
+								})
 
 					+e.form-row.row
 						+button({

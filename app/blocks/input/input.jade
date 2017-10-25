@@ -1,4 +1,7 @@
-mixin input(size)
+mixin input(data)
+	- data = data || {}
+	- size = data.size || false
+	- tag = data.tag || 'input'
 
-	+b('input').input(class=size && `input_size_${size}`)&attributes(attributes)
+	+b(tag).input(class=size && `input_size_${size}`)&attributes(attributes)
 		block

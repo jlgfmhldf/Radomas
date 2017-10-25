@@ -1,0 +1,64 @@
+include ../main-text/main-text
+include ../title/title
+include ../button/button
+include ../input/input
+
+mixin contacts()
+	+b.contacts&attributes(attributes)
+		+e.title
+			+title({ align: 'left'}) Наши контакты
+
+		+e.subtitle
+			+main-text Мы ответим на все ваши вопросы!
+
+		.row.between-xs
+			+e.text-block.col-xs
+				+e.contacts-block
+					+e.uppercase-text телефон
+					+e.number +7 (495) 921-45-39
+					+e.button
+						+button({
+							size: 'small'
+						}) Заказать звонок
+
+				+e.contacts-block
+					+e.uppercase-text Почта
+					+e.email-link(href='mailto:info@radomas.ru') info@radomas.ru
+
+				+e.contacts-block
+					+e.uppercase-text Адрес
+					+e.address-text г.Москва, Подсосенский переулок , д.28, стр.1
+					+e.location-map-link(href=jv0) Схема проезда
+
+
+			+e('form').form.col-xs
+				+e.form-title Как Вас зовут?
+				+e.input
+					+input(placeholder='Введите имя')
+
+				+e.form-title Телефон или эл. Почта
+				+e.input
+					+input(placeholder='Введите телефон или e-mail')
+
+
+				+e.form-title Ваше сообщение
+				+e.input
+					+input({ tag: 'textarea' })
+
+				+e.form-bottom.row
+					.col-xs-6
+						+button({ size: 'middle '}) Отправить
+
+					.col-xs-6
+						+e.form-bottom-text
+							| * Мы постараемся ответить вам в течении
+							| одного рабочего дня. Если ответа вы случайно не получили, пожалуйста позвоните нам в офис:
+							+e('span').bold-text +7 (495) 921-45-39
+
+		+e.location-map-block
+			+e.location-map-title Схема проезда до офиса, г. Москва
+
+			+e.map-img(src='assets/images/map.jpg')
+
+			+e.gray-text
+				| Явные признаки победы институциализации преданы социально-демократической анафеме. Независимые государства будут призваны к ответу. В целом, конечно, выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям.
