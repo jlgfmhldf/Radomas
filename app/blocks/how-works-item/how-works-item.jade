@@ -3,6 +3,7 @@ mixin how-works-item(data)
 
 	+b.how-works-item&attributes(attributes)
 		+e.circle(data-count=data.count class=`how-works-item__circle_${data.count}`)
+			+e.img(src=`assets/images/how-works-${data.count}.png`)
 		+e.title=data.title
 		+e.text
 			block
