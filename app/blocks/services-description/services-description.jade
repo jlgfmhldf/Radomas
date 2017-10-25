@@ -6,7 +6,8 @@ include ../button/button
 mixin services-description()
 	+b.services-description&attributes(attributes)
 		+e.title
-			+title Качественные услуги по оформлению документов
+			+title({ align: 'left' })
+				| Качественные услуги по оформлению документов
 
 		+e.text
 			+main-text.

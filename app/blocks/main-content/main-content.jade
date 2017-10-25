@@ -1,3 +1,8 @@
-mixin main-content()
-	+b.main-content&attributes(attributes)
+mixin main-content(data)
+	- data = data || []
+	- padding = data.padding
+
+	+b.main-content(
+		class=padding  === 'no' ? 'main-content_padding_no' : ''
+	)&attributes(attributes)
 		block
