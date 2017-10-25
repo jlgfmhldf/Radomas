@@ -38,7 +38,7 @@
 								<a href="#" class="header-menu__link">О нас</a>
 							</li>
 							<li class="header-menu__list-item">
-								<a href="#" class="header-menu__link">Услуги</a>
+								<a href="#" class="header-menu__link header-menu__link header-menu__link_active">Услуги</a>
 							</li>
 							<li class="header-menu__list-item">
 								<a href="#" class="header-menu__link">Цены</a>
@@ -159,10 +159,10 @@
 								<div class="aside-form__number-phone">+7(495)921-45-39</div>
 								<div class="aside-form__big-title">Мы можем сами связаться с вами:</div>
 								<div class="aside-form__input">
-									<input class="input" placeholder="Введите имя" type="text" />
+									<input class="input false" placeholder="Введите имя" type="text" />
 								</div>
 								<div class="aside-form__input">
-									<input class="input" placeholder="+7" type="text" />
+									<input class="input false" placeholder="+7" type="text" />
 								</div>
 								<div class="aside-form__button">
 									<button class="button button button_color_yellow button button_size_small button button_hoverColor_false button button_border_false">Заказать обратный звонок</button>
@@ -636,18 +636,19 @@
 							<div class="feedback-form__form-row row">
 								<div class="col-xs-6">
 									<div class="feedback-form__input-title">Как Вас зовут?</div>
-									<input class="input input input_size_big input" placeholder="Введите имя" type="text" />
+									<input class="input false input" placeholder="Введите имя" type="text" />
 								</div>
 								<div class="col-xs-6">
 									<div class="feedback-form__input-title">Телефон или эл. Почта</div>
-									<input class="input input input_size_big input" placeholder="Введите почту" type="text"
-									/>
+									<input class="input false input" placeholder="Введите почту" type="text" />
 								</div>
 							</div>
 							<div class="feedback-form__form-row row">
 								<div class="col-xs">
 									<div class="feedback-form__input-title">Ваше сообщение</div>
-									<textarea class="feedback-form__textarea"></textarea>
+									<div class="feedback-form__textarea">
+										<textarea class="input false"></textarea>
+									</div>
 								</div>
 							</div>
 							<div class="feedback-form__form-row row">
