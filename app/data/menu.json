@@ -9,7 +9,8 @@
 	},
 	{
 		"name": "Услуги",
-		"href": "#"
+		"href": "#",
+		"active": true
 	},
 	{
 		"name": "Цены",

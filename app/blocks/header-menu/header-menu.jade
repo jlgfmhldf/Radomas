@@ -4,4 +4,4 @@ mixin header-menu(links)
 			+e('ul').list
 				each link in links
 					+e('li').list-item
-						+e('a').link(href=link.href)=link.name
+						+e('a').link(href=link.href class=link.active && 'header-menu__link_active')=link.name
