@@ -1,0 +1,16 @@
+include ../button/button
+
+mixin prices-table-item(text, price)
+	+b('tr').prices-table-item&attributes(attributes)
+		+e('td').td_name=text
+		+e('td').td
+			.bold=price
+		+e('td').td
+			+button({
+				size: 'xsmall',
+				color: 'transparent',
+				hoverColor: 'yellow',
+				tag: 'a',
+				href: jv0,
+				border: 'lightgray'
+			}) Заказать
