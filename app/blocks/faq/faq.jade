@@ -1,5 +1,6 @@
 include ../title/title
 include ../tabs/tabs
+include ./faq-item
 
 mixin faq()
 	+b.faq&attributes(attributes)
@@ -11,4 +12,4 @@ mixin faq()
 					{text: 'Ликвидация ООО'}
 				]
 			})
-				| Content
+				+faq-item
