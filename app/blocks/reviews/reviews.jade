@@ -4,7 +4,7 @@ include ../review/review
 
 mixin reviews()
 	+b.reviews&attributes(attributes)
-		+title Отзывы
+		+title({ align: 'left' }) Отзывы
 		.row.middle-xs
 			+e.img-wrapper
 				+e.img(src='assets/images/services-email.png')
