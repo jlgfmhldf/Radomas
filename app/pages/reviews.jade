@@ -1,0 +1,14 @@
+extends /blocks/layout-inner/layout-inner
+include ../blocks/main-content/main-content
+include ../blocks/main-content/main-content-item
+include ../blocks/reviews/reviews
+
+block head
+	- var pageTitle = 'FAQ';
+
+block content
+	+main-content
+		+main-content-item
+			+reviews
+
+

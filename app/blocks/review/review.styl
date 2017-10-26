@@ -1,0 +1,23 @@
+.review
+	padding-y: 16px
+	padding-x: 10px
+	background-color: #ffffff
+	border: solid 1px #e1e1e1
+
+	&__date
+
+		&::before
+			content: ''
+			margin-right: 8px
+			display: inline-block
+			sprite: $calendar
+			transform: translateY(3px)
+
+	&__date-text
+		margin-y: -10px
+		display: inline-block
+
+	&__title
+		margin-bottom: 16px
+		display: block
+		font-size: 16px

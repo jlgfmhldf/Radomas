@@ -1,0 +1,36 @@
+include ../title/title
+include ../main-text/main-text
+include ../review/review
+
+mixin reviews()
+	+b.reviews&attributes(attributes)
+		+title Отзывы
+		.row.middle-xs
+			+e.img-wrapper
+				+e.img(src='assets/images/services-email.png')
+
+			.col-xs
+				+main-text
+					| Мы хотим стать еще лучше и будем рады любым Вашим отзывам о работе нашей компании.
+					| Свои мнения и пожелания присылайте нам на почту:
+					a.link(href='mailto:info@radomas.ru') info@radomas.ru
+					| . Мы обязательно рассмотрим все Ваши сообщения и постараемся разъяснить все возникающие вопросы
+
+		+e.reviews
+			+e.review-item
+				+review
+
+			+e.review-item
+				+review
+
+			+e.review-item
+				+review
+
+			+e.review-item
+				+review
+
+			+e.review-item
+				+review
+
+			+e.review-item
+				+review
