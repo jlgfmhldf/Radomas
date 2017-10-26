@@ -24,15 +24,15 @@
 			display: inline-block
 			sprite $folding_trianlge
 
-		&_hide::after
+		&_show::after
 			transform rotate(180deg)
 
 	&__folding-text
-		display: block
+		height: 0
+		overflow: hidden
 
-		&_hidden
-			height: 0
-			overflow: hidden
+		&_show
+			height: auto
 
 	&__item
 		margin-bottom: 25px

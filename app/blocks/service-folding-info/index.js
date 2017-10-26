@@ -1,19 +1,16 @@
+import Expander from '../../scripts/utils/Expander'
+
 const elems = document.querySelectorAll('.js-fold-btn')
 
-const contentHiddenClass = 'service-folding-info__folding-text_hidden'
-const btnHiddenClass = 'service-folding-info__fold-link_hide'
-
-const toggleFoldState = event => {
-	const el = event.target
-	const id = el.dataset.id
-	const content = document.querySelector(`[data-for='${id}']`)
-
-	const isShowed = content.classList.contains(contentHiddenClass)
-
-	el.innerText = isShowed ? 'Скрыть' : 'Раскрыть'
-
-	content.classList.toggle(contentHiddenClass)
-	el.classList.toggle(btnHiddenClass)
+const params = {
+	contentSelector: '.js-fold-content',
+	btnShowClass: 'service-folding-info__fold-link_show',
+	contentShowClass: 'service-folding-info__folding-text_show',
 }
 
-elems.forEach(elem => elem.addEventListener('click', toggleFoldState))
+const addExpander = elem => new Expander({
+	btn: elem,
+	...params,
+})
+
+elems.forEach(addExpander)
