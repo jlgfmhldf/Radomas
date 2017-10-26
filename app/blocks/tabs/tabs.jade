@@ -1,0 +1,18 @@
+mixin tabs(data)
+	- data = data || {}
+	- tabs = data.tabs || []
+
+
+	+b.tabs.js-tabs&attributes(attributes)
+		+e.buttons-section
+			each tab in tabs
+				+e.button.js-tabs-button(class=tab.active && 'tabs__button_active')
+					+e('span').button-text=tab.text
+
+		+e.tab-section
+			+e.tab_active.js-tabs-tab
+				block
+			+e.tab.js-tabs-tab
+				block
+
+

@@ -1,0 +1,14 @@
+include ../title/title
+include ../tabs/tabs
+
+mixin faq()
+	+b.faq&attributes(attributes)
+		+title({ align: 'left' }) Вопросы и ответы
+		+e.tabs
+			+tabs({
+				tabs: [
+					{text: 'Лицензия МЧС', active: true},
+					{text: 'Ликвидация ООО'}
+				]
+			})
+				| Content

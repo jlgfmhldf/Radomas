@@ -4013,6 +4013,10 @@ jstransformer@0.0.2:
     is-promise "^2.0.0"
     promise "^6.0.1"
 
+jtabs@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/jtabs/-/jtabs-4.0.1.tgz#e45fb33691c18f4202f9f7dd5e9a75e94e013948"
+
 keypress@0.1.x:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/keypress/-/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
