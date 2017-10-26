@@ -3,18 +3,29 @@
 
 
 .faq-item
-	margin-bottom: 10px
+	margin-bottom: 25px
 
 	&__question-link
 		margin-bottom: 10px
-		display: block
+		display: flex
+		align-items: center
 		font-size: 14px
 		color: #333
-		text-decoration: underline
 		cursor: pointer
+		vertical-align: middle
+
+		&::after
+			content: ''
+			margin-left: 5px
+			display: inline-block
+			sprite $faq_arrow
 
 		&_open
 			font-family: $GothamProMedium
+			text-decoration: underline
+
+		&_open::before
+			transform: rotate(180deg) translateY(2px)
 
 	&__content
 		display: none
