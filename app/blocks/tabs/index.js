@@ -11,9 +11,3 @@ jTabs({
 	activeBtnClass: 'tabs__button_active',
 	activeTabClass: 'tabs__tab_active',
 })
-
-
-
-// tabsContainers.forEach(elem => jTabs({
-// 	contain
-// }))
