@@ -4,38 +4,37 @@ mixin main-slider-item()
 	+e.item.js-main-slider__item.swiper-slide(
 		style='background-image: url(assets/images/slider-image-1.jpg)'
 	)
-		+e.slide-content
-			.content
-				+e.text-content
-					+e.text Наши услуги:
-					+e('h1').title
-						+e('b').bold Регистрация
-						br
-						| юридических лиц!
-					+e.text Квалифицированная помощь в регистрации юридических лиц различных организационно правовых форм.
-					+e.icons-text-list
-						+e.icons-text_time
-							+e.icons-text-content
-								| Работаем
-								br
-								| с 2004 года
-						+e.icons-text_money
-							+e.icons-text-content
-								| Делаем за твердую
-								br
-								| цену без доплат
+		+e.slide-content.row.middle-xs.content
+			+e.text-content
+				+e.text Наши услуги:
+				+e('h1').title
+					+e('b').bold Регистрация
+					br
+					| юридических лиц!
+				+e.text Квалифицированная помощь в регистрации юридических лиц различных организационно правовых форм.
+				+e.icons-text-list
+					+e.icons-text_time
+						+e.icons-text-content
+							| Работаем
+							br
+							| с 2004 года
+					+e.icons-text_money
+						+e.icons-text-content
+							| Делаем за твердую
+							br
+							| цену без доплат
 
-					+e.buttons
-						+e.button
-							+button({
-								color: 'blue',
-								size: 'big'
-							}) Подробнее
+				+e.buttons
+					+e.button
+						+button({
+							color: 'blue',
+							size: 'big'
+						}) Подробнее
 
-						+e.button
-							+button({
-								color: 'transparent',
-								size: 'big'
-							}) Сколько это стоит?
+					+e.button
+						+button({
+							color: 'transparent',
+							size: 'big'
+						}) Сколько это стоит?
 
 
