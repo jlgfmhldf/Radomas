@@ -1,6 +1,6 @@
 import Expander from '../../scripts/utils/Expander'
 
-const elems = document.querySelectorAll('.js-fold-btn')
+const elems = [ ...document.querySelectorAll('.js-fold-btn')]
 
 const params = {
 	contentSelector: '.js-fold-content',

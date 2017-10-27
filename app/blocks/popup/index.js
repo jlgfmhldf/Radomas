@@ -1,5 +1,5 @@
-const btns = document.querySelectorAll('.js-popup-open')
-const closeBtns = document.querySelectorAll('.js-popup-close')
+const btns = [ ...document.querySelectorAll('.js-popup-open')]
+const closeBtns = [ ...document.querySelectorAll('.js-popup-close')]
 
 const activeClass = 'popup_open'
 const ohClass = 'page_overflow_hidden'

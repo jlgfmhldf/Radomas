@@ -1,6 +1,6 @@
 import Expander from '../../scripts/utils/Expander'
 
-const elems = document.querySelectorAll('.js-faq-btn')
+const elems = [ ...document.querySelectorAll('.js-faq-btn')]
 
 const params = {
 	contentSelector: '.js-faq-content',
@@ -12,5 +12,6 @@ const addExpander = elem => new Expander({
 	btn: elem,
 	...params,
 })
+
 
 elems.forEach(addExpander)
