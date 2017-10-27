@@ -1,11 +1,19 @@
 .page
-	display: block
+	display: flex
+	flex-direction: column
+
+	&__content
+		flex: 1 0 auto
 
 	&__breadcrumbs
 		margin-bottom: 15px
 
 	&__bottom
 		margin-top: 15px
+		flex: 0 0 auto
+
+		&_marginTop_none
+			margin-top: 0
 
 	&__aside
 		width: 24%

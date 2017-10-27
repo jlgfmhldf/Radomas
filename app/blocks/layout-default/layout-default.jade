@@ -13,7 +13,9 @@ html(lang='ru')
 		+header(
 			getData('menu')
 		)
-		block content
-		+feedback-form
-		+footer
+		+e.content
+			block content
+		+e.bottom_marginTop_none
+			+feedback-form
+			+footer
 		+scripts(['app.min.js'])
