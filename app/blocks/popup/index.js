@@ -1,3 +1,5 @@
+import 'mdn-polyfills/Element.prototype.closest'
+
 const btns = [ ...document.querySelectorAll('.js-popup-open')]
 const closeBtns = [ ...document.querySelectorAll('.js-popup-close')]
 
@@ -16,6 +18,7 @@ const handleOpen = event => {
 
 const handleClose = event => {
 	const { target } = event
+	console.log(target)
 	const popupElem = target.closest('.js-popup')
 
 	popupElem.classList.remove(activeClass)
