@@ -1,0 +1,16 @@
+mixin popup(data)
+	- data = data || {}
+	- id = data.id || Math.random()
+	- title = data.title || ''
+
+	+b.popup.js-popup(data-id=id)&attributes(attributes)
+		+e.overlay
+
+		+e.center.row.center-xs.middle-xs
+			+e.block
+				+e.header=data.title
+					+e('span').close.js-popup-close
+				+e.content
+					block
+
+
