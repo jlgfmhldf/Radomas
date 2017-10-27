@@ -14,10 +14,10 @@ doctype html
 html(lang='ru')
 	include ../head/head
 	+page
-		+e.top
-			+header(
-				getData('menu')
-			)
+		+header(
+			getData('menu')
+		)
+		+e.breadcrumbs
 			+breadcrumbs
 		+e.content
 			.content
