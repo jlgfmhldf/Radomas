@@ -34,26 +34,25 @@ mixin contacts()
 			+e('form').form.col-xs
 				+e.form-title Как Вас зовут?
 				+e.input
-					+input(placeholder='Введите имя')
+					+input({size: 'big'})(placeholder='Введите имя')
 
 				+e.form-title Телефон или эл. Почта
 				+e.input
-					+input(placeholder='Введите телефон или e-mail')
+					+input({size: 'big'})(placeholder='Введите телефон или e-mail')
 
 
 				+e.form-title Ваше сообщение
 				+e.input
 					+input({ tag: 'textarea' })
 
-				+e.form-bottom.row
-					.col-xs-6
+				+e.form-bottom.row.between-xs
+					.col-xs-5
 						+button({ size: 'middle '}) Отправить
 
-					.col-xs-6
-						+e.form-bottom-text
-							| * Мы постараемся ответить вам в течении
-							| одного рабочего дня. Если ответа вы случайно не получили, пожалуйста позвоните нам в офис:
-							+e('span').bold-text +7 (495) 921-45-39
+					+e.form-bottom-text
+						| * Мы постараемся ответить вам в течении
+						| одного рабочего дня. Если ответа вы случайно не получили, пожалуйста позвоните нам в офис:
+						+e('span').bold-text +7 (495) 921-45-39
 
 		+e.location-map-block
 			+e.location-map-title Схема проезда до офиса, г. Москва
