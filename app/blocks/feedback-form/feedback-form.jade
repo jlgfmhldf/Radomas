@@ -26,11 +26,11 @@ mixin feedback-form()
 					+e.form-row.row
 						.col-xs-6
 							+e.input-title Как Вас зовут?
-							+input('big').input(placeholder='Введите имя')
+							+input({size: 'big'})(placeholder='Введите имя')
 
 						.col-xs-6
 							+e.input-title Телефон или эл. Почта
-							+input('big').input(placeholder='Введите почту')
+							+input({size: 'big'})(placeholder='Введите почту')
 
 					+e.form-row.row
 						.col-xs

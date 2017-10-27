@@ -1,5 +1,5 @@
 mixin main-content-item(data)
 	- data = data || {}
-	- borderNo = data.borderNo || false
-	+b.main-content-item(class=borderNo && 'main-content-item_border_no')&attributes(attributes)
+	- borderNo = data.borderNo || null
+	.main-content-item(class=borderNo && 'main-content-item_border_no')&attributes(attributes)
 		block

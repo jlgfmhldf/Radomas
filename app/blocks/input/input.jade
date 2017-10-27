@@ -1,7 +1,7 @@
 mixin input(data)
 	- data = data || {}
-	- size = data.size || false
+	- size = data.size || null
 	- tag = data.tag || 'input'
 
-	+b(tag).input(class=size && `input_size_${size}`)&attributes(attributes)
+	#{tag}.input(class=size && `input_size_${size}`)&attributes(attributes)
 		block

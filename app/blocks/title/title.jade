@@ -1,4 +1,4 @@
 mixin title(data)
 	- data = data || {}
-	+b.title(class=data.align && `title_align_${data.align}`)&attributes(attributes)
+	.title(class=data.align && `title_align_${data.align}`)&attributes(attributes)
 		block
