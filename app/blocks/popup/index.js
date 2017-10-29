@@ -18,7 +18,6 @@ const handleOpen = event => {
 
 const handleClose = event => {
 	const { target } = event
-	console.log(target)
 	const popupElem = target.closest('.js-popup')
 
 	popupElem.classList.remove(activeClass)

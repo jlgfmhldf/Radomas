@@ -125,6 +125,7 @@
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "jtabs": "^4.0.1",
     "mdn-polyfills": "^5.4.0",
     "swiper": "^4.0.2"

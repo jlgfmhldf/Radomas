@@ -62,6 +62,10 @@ export default function makeWebpackConfig({
 				test: /\.js$/,
 				loader: 'eslint-loader',
 				exclude: /node_modules/
+			},
+			{
+				test: require.resolve('jquery'),
+				loader: 'expose?$!expose?jQuery'
 			}].filter(loader => loader)
 		},
 		plugins: [
