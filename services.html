@@ -29,29 +29,30 @@
 		<header class="header">
 			<div class="header-menu">
 				<div class="content">
-					<ul class="header-menu__list">
-						<li class="header-menu__list-item">
+					<div class="header-menu__mobile-btn js-mobile-btn">☰ Меню</div>
+					<ul data-navigation-handle=".js-mobile-btn" data-navigation-content=".page__content" class="header-menu__list row between-md middle-xs start-xs js-menu">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Главная</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">О нас</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link header-menu__link header-menu__link_active">Услуги</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Цены</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Отзывы</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">F.A.Q</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Статьи</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Контакты</a>
 						</li>
 					</ul>
@@ -59,27 +60,29 @@
 			</div>
 			<div class="header-info">
 				<div class="content">
-					<div class="header-info__content">
-						<div class="header-info__logo">
+					<div class="header-info__content row between-md center-xs">
+						<div class="header-info__logo col-md-3 col-xs-12 col-sm-4">
 							<div class="logo">
 								<span class="logo__text">Правовой центр ООО «Радомас»</span>
 							</div>
 						</div>
-						<div class="header-info__info-items">
-							<div class="header-info__info-item">
-								<div class="header-info__info-icon header-info__info-icon_position"></div>
-								<div class="header-info__info-content">
-									<div class="header-info__info-text">г. Москва,
-										<br/>Подсосенский переулок, д.28, стр.1</div>
-									<a href="javascript:void(0);" class="header-info__info-link">Схема проезда</a>
+						<div class="header-info__info-items col-md-7 col-xs-12 col-sm-8">
+							<div class="row">
+								<div class="header-info__info-item col-md-6 col-sm-6 col-xs-12">
+									<div class="header-info__info-icon header-info__info-icon_position"></div>
+									<div class="header-info__info-content">
+										<div class="header-info__info-text">г. Москва,
+											<br/>Подсосенский переулок, д.28, стр.1</div>
+										<a href="javascript:void(0);" class="header-info__info-link">Схема проезда</a>
+									</div>
 								</div>
-							</div>
-							<div class="header-info__info-item">
-								<div class="header-info__info-icon header-info__info-icon_phone"></div>
-								<div class="header-info__info-content">
-									<div class="header-info__info-text">Контактный номер:
-										<div class="header-info__info-bold">+7(495)921-45-39</div>
-										<a href="javascript:void(0);" class="header-info__info-link">Заказать обратный звонок</a>
+								<div class="header-info__info-item col-md-6 col-sm-6 col-xs-12">
+									<div class="header-info__info-icon header-info__info-icon_phone"></div>
+									<div class="header-info__info-content">
+										<div class="header-info__info-text">Контактный номер:
+											<div class="header-info__info-bold">+7(495)921-45-39</div>
+											<a href="javascript:void(0);" class="header-info__info-link">Заказать обратный звонок</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -99,7 +102,7 @@
 		<div class="page__content">
 			<div class="content">
 				<div class="row between-xs">
-					<div class="page__aside">
+					<div class="page__aside col-md-3 col-sm-4 col-xs-12 last-xs first-md first-sm">
 						<div class="page__aside-menu">
 							<div class="aside-menu">
 								<div class="aside-menu__title">Оформление лицензий</div>
@@ -193,7 +196,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="page__main">
+					<div class="page__main col-md-9 col-sm-8 col-xs-12">
 						<div class="main-content">
 							<div class="main-content-item">
 								<div class="services-description">
@@ -209,7 +212,7 @@
 									<div class="services-description__services-list">
 										<div class="services-list">
 											<div class="row around-xs">
-												<div class="services-list__item col-xs-3">
+												<div class="services-list__item col-xs-12 col-md-4">
 													<img src="assets/images/services-1.png" class="services-list__img" alt="" role="presentation" />
 													<div class="services-list__title">Оформление
 														<br/>лицензий</div>
@@ -217,14 +220,14 @@
 													<a href="javascript:void(0);" class="services-list__gray-link">Допуск СРО</a>
 													<a href="javascript:void(0);" class="services-list__gray-link">Аккредитация МЧС</a>
 												</div>
-												<div class="services-list__item col-xs-3">
+												<div class="services-list__item col-xs-12 col-md-4">
 													<img src="assets/images/services-2.png" class="services-list__img" alt="" role="presentation" />
 													<div class="services-list__title">Регистрация
 														<br/>юридических лиц</div>
 													<a href="javascript:void(0);" class="services-list__gray-link">Некоммерческие организации</a>
 													<a href="javascript:void(0);" class="services-list__gray-link">Регистрация ООО, АО</a>
 												</div>
-												<div class="services-list__item col-xs-3">
+												<div class="services-list__item col-xs-12 col-md-4">
 													<img src="assets/images/services-3.png" class="services-list__img" alt="" role="presentation" />
 													<div class="services-list__title">Оформление
 														<br/>лицензий</div>
@@ -246,7 +249,7 @@
 										<div class="title">Преимущества получения лицензии МЧС от нашей компании в Москве</div>
 									</div>
 									<div class="services-license-benefits__items row">
-										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs">
+										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs-12 col-md-4">
 											<img src="assets/images/benefits-1.png" class="services-license-benefits__img" alt="" role="presentation" />
 											<div class="services-license-benefits__item-title">НАДЕЖНОСТЬ</div>
 											<div class="services-license-benefits__text">Нет необходимости тратить личное время, можно быть уверенным в законности всей полученной документации, ведь вы
@@ -254,7 +257,7 @@
 
 											</div>
 										</div>
-										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs">
+										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs-12 col-md-4">
 											<img src="assets/images/benefits-2.png" class="services-license-benefits__img" alt="" role="presentation" />
 											<div class="services-license-benefits__item-title">ЗАКОННОСТЬ И ПРОЗРАЧНОСТЬ</div>
 											<div class="services-license-benefits__text">Мы понимаем, что любой заинтересованной компании нужна лицензия МЧС только официального образца. Сведения о лицензии,
@@ -262,7 +265,7 @@
 												доступе на сайте МЧС России.
 											</div>
 										</div>
-										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs">
+										<div class="services-license-benefits__item services-license-benefits__item_1 col-xs-12 col-md-4">
 											<img src="assets/images/benefits-3.png" class="services-license-benefits__img" alt="" role="presentation" />
 											<div class="services-license-benefits__item-title">ОБЪЕКТИВНАЯ СТОИМОСТЬ</div>
 											<div class="services-license-benefits__text">Никаких надуманных сумм, ценник полностью обоснован сложностью проводимых работ и трудозатратами специалистов.</div>
@@ -271,16 +274,16 @@
 								</div>
 							</div>
 							<div class="main-content-item">
-								<div class="services-button-block row middle-xs">
+								<div class="services-button-block row middle-xs between-sm center-xs start-md">
 									<img src="assets/images/services-email.png" class="services-button-block__icon" alt="" role="presentation" />
-									<div class="col-xs">
+									<div class="col-xs-12 col-md col-sm-10 start-sm">
 										<p class="services-button-block__bold-text">Готовы ответить на любые ваши вопросы по телефону: +7(495)921-45-39 или пишите на
 											<br/>
 											<a href="javascript:void(0);" class="services-button-block__link">radomas@rambler.ru</a>
 										</p>
 									</div>
-									<div class="services-button-block__button">
-										<a href="mailto:radomas@rambler.ru" class="button button_color_yellow button_size_big">Написать нам</a>
+									<div class="services-button-block__button col-sm-6 col-md-3">
+										<a href="mailto:radomas@rambler.ru" class="button button_color_yellow button_size_big button_style_block">Написать нам</a>
 									</div>
 								</div>
 							</div>
@@ -293,13 +296,13 @@
 									<ul
 										class="services-legal-center__list">
 										<li class="services-legal-center__list-item">
-											<div class="blue-circle-text row middle-xs">
-												<div class="col-xs-1">
+											<div class="blue-circle-text row middle-xs center-xs start-sm start-md">
+												<div class="col-xs-3 col-md-1 col-sm-2">
 													<div class="blue-circle-text__icon">
 														<img src="assets/images/legal-center-1.png" class="blue-circle-text__img" alt="" role="presentation" />
 													</div>
 												</div>
-												<div class="blue-circle-text__text col-xs">
+												<div class="blue-circle-text__text col-xs-12 col-md-11 col-sm-10">
 													<p class="main-text">Большой опыт работы сотрудников компании. Наш коллектив сформировался в 2004 году и за прошедшее время научился
 														работать как часы, понимая друг друга с полувзгляда. Это дает возможность максимально быстро выполнять взятые
 														на себя обязательства.</p>
@@ -307,26 +310,26 @@
 											</div>
 										</li>
 										<li class="services-legal-center__list-item">
-											<div class="blue-circle-text row middle-xs">
-												<div class="col-xs-1">
+											<div class="blue-circle-text row middle-xs center-xs start-sm start-md">
+												<div class="col-xs-3 col-md-1 col-sm-2">
 													<div class="blue-circle-text__icon">
 														<img src="assets/images/legal-center-2.png" class="blue-circle-text__img" alt="" role="presentation" />
 													</div>
 												</div>
-												<div class="blue-circle-text__text col-xs">
+												<div class="blue-circle-text__text col-xs-12 col-md-11 col-sm-10">
 													<p class="main-text">Фиксированная сумма оплаты. Мы работаем на договорной основе, поэтому стоимость работ четко зафиксирована и
 														не подлежит никаким изменениям на всем протяжении выполнения необходимых задач.</p>
 												</div>
 											</div>
 										</li>
 										<li class="services-legal-center__list-item">
-											<div class="blue-circle-text row middle-xs">
-												<div class="col-xs-1">
+											<div class="blue-circle-text row middle-xs center-xs start-sm start-md">
+												<div class="col-xs-3 col-md-1 col-sm-2">
 													<div class="blue-circle-text__icon">
 														<img src="assets/images/legal-center-3.png" class="blue-circle-text__img" alt="" role="presentation" />
 													</div>
 												</div>
-												<div class="blue-circle-text__text col-xs">
+												<div class="blue-circle-text__text col-xs-12 col-md-11 col-sm-10">
 													<p class="main-text">Гибкая система оплаты предоставленных услуг. В «Радомас» вы можете внести всю сумму предоплатой, заплатить несколькими
 														частями или оплатить наши услуги после окончания всех работ. Оплата может быть внесена наличными или по безналичному
 														расчету.</p>
@@ -334,26 +337,26 @@
 											</div>
 										</li>
 										<li class="services-legal-center__list-item">
-											<div class="blue-circle-text row middle-xs">
-												<div class="col-xs-1">
+											<div class="blue-circle-text row middle-xs center-xs start-sm start-md">
+												<div class="col-xs-3 col-md-1 col-sm-2">
 													<div class="blue-circle-text__icon">
 														<img src="assets/images/legal-center-4.png" class="blue-circle-text__img" alt="" role="presentation" />
 													</div>
 												</div>
-												<div class="blue-circle-text__text col-xs">
+												<div class="blue-circle-text__text col-xs-12 col-md-11 col-sm-10">
 													<p class="main-text">Осуществление деятельности в Москве и за ее пределами. Мы имеем представительства в различных населенных пунктах,
 														поэтому можем предоставить услуги по оформлению документов практически в любой части страны.</p>
 												</div>
 											</div>
 										</li>
 										<li class="services-legal-center__list-item">
-											<div class="blue-circle-text row middle-xs">
-												<div class="col-xs-1">
+											<div class="blue-circle-text row middle-xs center-xs start-sm start-md">
+												<div class="col-xs-3 col-md-1 col-sm-2">
 													<div class="blue-circle-text__icon">
 														<img src="assets/images/legal-center-5.png" class="blue-circle-text__img" alt="" role="presentation" />
 													</div>
 												</div>
-												<div class="blue-circle-text__text col-xs">
+												<div class="blue-circle-text__text col-xs-12 col-md-11 col-sm-10">
 													<p class="main-text">Бесплатное консультирование клиентов по всем интересующим вопросам. Сотрудники нашей компании являются квалифицированными
 														специалистами в своей области – они всегда готовы разъяснить все спорные и вызывающие вопросы моменты.</p>
 												</div>
@@ -370,7 +373,7 @@
 		<div class="page__bottom">
 			<div class="feedback-form">
 				<div class="content row top-xs">
-					<div class="feedback-form__text-content col-xs-6">
+					<div class="feedback-form__text-content col-md-6 col-xs-12">
 						<div class="feedback-form__title">Свяжитесь с нами</div>
 						<div class="feedback-form__text">Мы ответим на все ваши вопросы!</div>
 						<div class="feedback-form__small-text">По телефону</div>
@@ -381,15 +384,15 @@
 						<div class="feedback-form__small-text">На почту</div>
 						<a href="mailto:info@radomas.ru" class="feedback-form__email">info@radomas.ru</a>
 					</div>
-					<div class="feedback-form__form-block col-xs-6">
+					<div class="feedback-form__form-block col-md-6 col-xs-12">
 						<div class="feedback-form__title">Форма обратной связи</div>
 						<div class="feedback-form__form">
 							<div class="feedback-form__form-row row">
-								<div class="col-xs-6">
+								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="feedback-form__input-title">Как Вас зовут?</div>
 									<input class="input input_size_big" placeholder="Введите имя"></input>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="feedback-form__input-title">Телефон или эл. Почта</div>
 									<input class="input input_size_big" placeholder="Введите почту"></input>
 								</div>
@@ -411,36 +414,38 @@
 			</div>
 			<div class="footer">
 				<div class="content row between-xs">
-					<div class="col-xs-3">
+					<div class="footer__col col-md-3 col-xs-12 last-xs col-sm-4 first-md">
 						<div class="logo logo_white">
 							<span class="logo__text">Правовой центр ООО «Радомас»</span>
 						</div>
 						<div class="footer__copy-text">© 2012-2017 OOO "Радомас"</div>
 						<a class="footer__yellow-link">Карта сайта</a>
 					</div>
-					<div class="col-xs-1">
+					<div class="footer__col col-md-1 col-sm-3 col-xs-6">
 						<a href="javascript:void(0);" class="footer__link">Главная</a>
 						<a href="javascript:void(0);" class="footer__link">О нас</a>
 						<a href="javascript:void(0);" class="footer__link">Услуги</a>
 						<a href="javascript:void(0);" class="footer__link">Цены</a>
 					</div>
-					<div class="col-xs-1">
+					<div class="footer__col col-md-1 col-sm-3 col-xs-6">
 						<a href="javascript:void(0);" class="footer__link">Отзывы</a>
 						<a href="javascript:void(0);" class="footer__link">F.A.Q.</a>
 						<a href="javascript:void(0);" class="footer__link">Словарь</a>
 						<a href="javascript:void(0);" class="footer__link">Контакты</a>
 					</div>
-					<div class="col-xs-4">
+					<div class="footer__col col-md-3 col-sm-5 col-xs-12">
 						<a href="javascript:void(0);" class="footer__contact footer__contact_phone">+7 (495) 921-45-39,</a>
 						<a href="javascript:void(0);" class="footer__contact footer__contact_email">info@radomas.ru</a>
 						<div class="footer__contact footer__contact_position">г.Москва, Подсосенский переулок,
 							<br/>д.28, стр.1</div>
 					</div>
-					<div class="footer__social">
-						<div class="footer__social-text">Мы в соц.сетях:</div>
-						<div class="footer__social-wrapper">
-							<a href="javascript:void(0);" class="footer__social-link footer__social-link_vk"></a>
-							<a href="javascript:void(0);" class="footer__social-link footer__social-link_fb"></a>
+					<div class="footer__col col-sm-4 col-md-2 col-xs-12 last-sm">
+						<div class="row middle-xs between-xs">
+							<div class="footer__social-text col-md-12 col-sm-6">Мы в соц.сетях:</div>
+							<div class="footer__social-wrapper col-md-12 col-sm-6">
+								<a href="javascript:void(0);" class="footer__social-link footer__social-link_vk"></a>
+								<a href="javascript:void(0);" class="footer__social-link footer__social-link_fb"></a>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -29,29 +29,30 @@
 		<header class="header">
 			<div class="header-menu">
 				<div class="content">
-					<ul class="header-menu__list">
-						<li class="header-menu__list-item">
+					<div class="header-menu__mobile-btn js-mobile-btn">☰ Меню</div>
+					<ul data-navigation-handle=".js-mobile-btn" data-navigation-content=".page__content" class="header-menu__list row between-md middle-xs start-xs js-menu">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Главная</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">О нас</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link header-menu__link header-menu__link_active">Услуги</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Цены</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Отзывы</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">F.A.Q</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Статьи</a>
 						</li>
-						<li class="header-menu__list-item">
+						<li class="header-menu__list-item col-md col-sm-12 col-xs-12">
 							<a href="#" class="header-menu__link">Контакты</a>
 						</li>
 					</ul>
@@ -59,27 +60,29 @@
 			</div>
 			<div class="header-info">
 				<div class="content">
-					<div class="header-info__content">
-						<div class="header-info__logo">
+					<div class="header-info__content row between-md center-xs">
+						<div class="header-info__logo col-md-3 col-xs-12 col-sm-4">
 							<div class="logo">
 								<span class="logo__text">Правовой центр ООО «Радомас»</span>
 							</div>
 						</div>
-						<div class="header-info__info-items">
-							<div class="header-info__info-item">
-								<div class="header-info__info-icon header-info__info-icon_position"></div>
-								<div class="header-info__info-content">
-									<div class="header-info__info-text">г. Москва,
-										<br/>Подсосенский переулок, д.28, стр.1</div>
-									<a href="javascript:void(0);" class="header-info__info-link">Схема проезда</a>
+						<div class="header-info__info-items col-md-7 col-xs-12 col-sm-8">
+							<div class="row">
+								<div class="header-info__info-item col-md-6 col-sm-6 col-xs-12">
+									<div class="header-info__info-icon header-info__info-icon_position"></div>
+									<div class="header-info__info-content">
+										<div class="header-info__info-text">г. Москва,
+											<br/>Подсосенский переулок, д.28, стр.1</div>
+										<a href="javascript:void(0);" class="header-info__info-link">Схема проезда</a>
+									</div>
 								</div>
-							</div>
-							<div class="header-info__info-item">
-								<div class="header-info__info-icon header-info__info-icon_phone"></div>
-								<div class="header-info__info-content">
-									<div class="header-info__info-text">Контактный номер:
-										<div class="header-info__info-bold">+7(495)921-45-39</div>
-										<a href="javascript:void(0);" class="header-info__info-link">Заказать обратный звонок</a>
+								<div class="header-info__info-item col-md-6 col-sm-6 col-xs-12">
+									<div class="header-info__info-icon header-info__info-icon_phone"></div>
+									<div class="header-info__info-content">
+										<div class="header-info__info-text">Контактный номер:
+											<div class="header-info__info-bold">+7(495)921-45-39</div>
+											<a href="javascript:void(0);" class="header-info__info-link">Заказать обратный звонок</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -99,7 +102,7 @@
 		<div class="page__content">
 			<div class="content">
 				<div class="row between-xs">
-					<div class="page__aside">
+					<div class="page__aside col-md-3 col-sm-4 col-xs-12 last-xs first-md first-sm">
 						<div class="page__aside-menu">
 							<div class="aside-menu">
 								<div class="aside-menu__title">Оформление лицензий</div>
@@ -170,7 +173,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="page__main">
+					<div class="page__main col-md-9 col-sm-8 col-xs-12">
 						<div class="main-content">
 							<div class="main-content-item">
 								<div class="contacts">
@@ -181,7 +184,7 @@
 										<p class="main-text">Мы ответим на все ваши вопросы!</p>
 									</div>
 									<div class="row between-xs">
-										<div class="contacts__text-block col-indents">
+										<div class="contacts__text-block col-indents col-md-4 col-xs-12">
 											<div class="contacts__contacts-block">
 												<div class="contacts__uppercase-text">телефон</div>
 												<div class="contacts__number">+7 (495) 921-45-39</div>
@@ -199,7 +202,7 @@
 												<a href="javascript:void(0);" class="contacts__location-map-link">Схема проезда</a>
 											</div>
 										</div>
-										<form class="contacts__form col-indents">
+										<form class="contacts__form col-indents col-md-6 col-xs-12">
 											<div class="contacts__form-title">Как Вас зовут?</div>
 											<div class="contacts__input">
 												<input class="input input_size_big" placeholder="Введите имя"></input>
@@ -213,10 +216,10 @@
 												<textarea class="input"></textarea>
 											</div>
 											<div class="contacts__form-bottom row between-xs">
-												<div class="col-xs-5">
+												<div class="col-md-5 col-sm-5 col-xs-12">
 													<button class="button button_color_yellow button_size_middle ">Отправить</button>
 												</div>
-												<div class="contacts__form-bottom-text">* Мы постараемся ответить вам в течении одного рабочего дня. Если ответа вы случайно не получили, пожалуйста
+												<div class="contacts__form-bottom-text col-xs-12">* Мы постараемся ответить вам в течении одного рабочего дня. Если ответа вы случайно не получили, пожалуйста
 													позвоните нам в офис:
 													<span class="contacts__bold-text">+7 (495) 921-45-39</span>
 												</div>
@@ -241,7 +244,7 @@
 		<div class="page__bottom">
 			<div class="feedback-form">
 				<div class="content row top-xs">
-					<div class="feedback-form__text-content col-xs-6">
+					<div class="feedback-form__text-content col-md-6 col-xs-12">
 						<div class="feedback-form__title">Свяжитесь с нами</div>
 						<div class="feedback-form__text">Мы ответим на все ваши вопросы!</div>
 						<div class="feedback-form__small-text">По телефону</div>
@@ -252,15 +255,15 @@
 						<div class="feedback-form__small-text">На почту</div>
 						<a href="mailto:info@radomas.ru" class="feedback-form__email">info@radomas.ru</a>
 					</div>
-					<div class="feedback-form__form-block col-xs-6">
+					<div class="feedback-form__form-block col-md-6 col-xs-12">
 						<div class="feedback-form__title">Форма обратной связи</div>
 						<div class="feedback-form__form">
 							<div class="feedback-form__form-row row">
-								<div class="col-xs-6">
+								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="feedback-form__input-title">Как Вас зовут?</div>
 									<input class="input input_size_big" placeholder="Введите имя"></input>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="feedback-form__input-title">Телефон или эл. Почта</div>
 									<input class="input input_size_big" placeholder="Введите почту"></input>
 								</div>
@@ -282,36 +285,38 @@
 			</div>
 			<div class="footer">
 				<div class="content row between-xs">
-					<div class="col-xs-3">
+					<div class="footer__col col-md-3 col-xs-12 last-xs col-sm-4 first-md">
 						<div class="logo logo_white">
 							<span class="logo__text">Правовой центр ООО «Радомас»</span>
 						</div>
 						<div class="footer__copy-text">© 2012-2017 OOO "Радомас"</div>
 						<a class="footer__yellow-link">Карта сайта</a>
 					</div>
-					<div class="col-xs-1">
+					<div class="footer__col col-md-1 col-sm-3 col-xs-6">
 						<a href="javascript:void(0);" class="footer__link">Главная</a>
 						<a href="javascript:void(0);" class="footer__link">О нас</a>
 						<a href="javascript:void(0);" class="footer__link">Услуги</a>
 						<a href="javascript:void(0);" class="footer__link">Цены</a>
 					</div>
-					<div class="col-xs-1">
+					<div class="footer__col col-md-1 col-sm-3 col-xs-6">
 						<a href="javascript:void(0);" class="footer__link">Отзывы</a>
 						<a href="javascript:void(0);" class="footer__link">F.A.Q.</a>
 						<a href="javascript:void(0);" class="footer__link">Словарь</a>
 						<a href="javascript:void(0);" class="footer__link">Контакты</a>
 					</div>
-					<div class="col-xs-4">
+					<div class="footer__col col-md-3 col-sm-5 col-xs-12">
 						<a href="javascript:void(0);" class="footer__contact footer__contact_phone">+7 (495) 921-45-39,</a>
 						<a href="javascript:void(0);" class="footer__contact footer__contact_email">info@radomas.ru</a>
 						<div class="footer__contact footer__contact_position">г.Москва, Подсосенский переулок,
 							<br/>д.28, стр.1</div>
 					</div>
-					<div class="footer__social">
-						<div class="footer__social-text">Мы в соц.сетях:</div>
-						<div class="footer__social-wrapper">
-							<a href="javascript:void(0);" class="footer__social-link footer__social-link_vk"></a>
-							<a href="javascript:void(0);" class="footer__social-link footer__social-link_fb"></a>
+					<div class="footer__col col-sm-4 col-md-2 col-xs-12 last-sm">
+						<div class="row middle-xs between-xs">
+							<div class="footer__social-text col-md-12 col-sm-6">Мы в соц.сетях:</div>
+							<div class="footer__social-wrapper col-md-12 col-sm-6">
+								<a href="javascript:void(0);" class="footer__social-link footer__social-link_vk"></a>
+								<a href="javascript:void(0);" class="footer__social-link footer__social-link_fb"></a>
+							</div>
 						</div>
 					</div>
 				</div>
