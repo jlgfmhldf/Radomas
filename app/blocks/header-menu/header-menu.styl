@@ -1,18 +1,31 @@
 .header-menu
-	size: 100% 55px
+	size: 100% auto
 	background-color: #3a3a3a
+	padding-bottom: 10px
+
+
+	&__mobile-btn
+		display: block
+		padding-top: 10px !important
+		font-size: 20px
+		color: #fff
+
+		@media screen and (min-width: 1040px)
+			display: none
+
 
 	&__list
-		display: flex
-		justify-content: space-between
-		align-items: center
 		height: 100%
 
+		@media screen and (max-width: 1040px)
+			display: none
+
+
 	&__link
-		margin-top: 9px
-		padding-x: 12px
+		position: relative
+		margin-top: 15px
 		padding-bottom: 7px
-		display: block
+		display: inline-block
 		font-family: $GothamProMedium
 		font-size: 13px
 		font-weight: 500
@@ -20,12 +33,23 @@
 		color: rgba(255, 255, 255, .83)
 		text-transform: uppercase
 		text-decoration: none
-		border-bottom: 2px solid transparent
-		transition: .5s ease
 
-		&_active,
-		&:hover
+		&::before
+			content: ''
+			border-bottom: 2px solid transparent
+			position: absolute
+			bottom: 0
+			left: -12px
+			right: -12px
+			transition: .5s ease
+
+		&_active::before,
+		&:hover::before
 			border-color: #ffc560
 
 		// TODO hover, focus
 
+
+.fs-navigation-overlay-nav.fs-navigation-enabled
+	background-color: #3a3a3a
+	padding: 5%

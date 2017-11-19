@@ -1,10 +1,10 @@
 include ../main-text/main-text
 
 mixin blue-circle-text(imgPath)
-	+b.blue-circle-text.row.middle-xs&attributes(attributes)
-		.col-xs-1
+	+b.blue-circle-text.row.middle-xs.center-xs.start-sm.start-md&attributes(attributes)
+		.col-xs-3.col-md-1.col-sm-2
 			+e.icon
 				+e.img(src=imgPath)
-		+e.text.col-xs
+		+e.text.col-xs-12.col-md-11.col-sm-10
 			+main-text
 				block

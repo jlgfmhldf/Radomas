@@ -2,7 +2,7 @@ mixin services-list()
 	+b.services-list&attributes(attributes)
 		.row.around-xs
 
-			+e.item.col-xs-3
+			+e.item.col-xs-12.col-md-4
 				+e.img(src='assets/images/services-1.png')
 				+e.title
 					| Оформление
@@ -14,7 +14,7 @@ mixin services-list()
 				+e('a').gray-link(href=jv0) Аккредитация МЧС
 
 
-			+e.item.col-xs-3
+			+e.item.col-xs-12.col-md-4
 				+e.img(src='assets/images/services-2.png')
 				+e.title
 					| Регистрация
@@ -24,7 +24,7 @@ mixin services-list()
 				+e('a').gray-link(href=jv0) Некоммерческие организации
 				+e('a').gray-link(href=jv0) Регистрация ООО, АО
 
-			+e.item.col-xs-3
+			+e.item.col-xs-12.col-md-4
 				+e.img(src='assets/images/services-3.png')
 				+e.title
 					| Оформление

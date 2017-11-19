@@ -3,26 +3,26 @@ include ../logo/logo
 mixin header-info()
 	+b.header-info&attributes(attributes)
 		.content
-			+e.content
-				+e.logo
+			+e.content.row.between-md.center-xs
+				+e.logo.col-md-3.col-xs-12.col-sm-4
 					+logo
 
-				+e.info-items
+				+e.info-items.col-md-7.col-xs-12.col-sm-8
+					.row
+						+e.info-item.col-md-6.col-sm-6.col-xs-12
+							+e.info-icon_position
 
-					+e.info-item
-						+e.info-icon_position
+							+e.info-content
+								+e.info-text
+									| г. Москва,
+									br
+									| Подсосенский переулок, д.28, стр.1
+								+e.info-link(href=jv0) Схема проезда
 
-						+e.info-content
-							+e.info-text
-								| г. Москва,
-								br
-								| Подсосенский переулок, д.28, стр.1
-							+e.info-link(href=jv0) Схема проезда
-
-					+e.info-item
-						+e.info-icon_phone
-						+e.info-content
-							+e.info-text Контактный номер:
-								+e.info-bold +7(495)921-45-39
-								+e.info-link(href=jv0) Заказать обратный звонок
+						+e.info-item.col-md-6.col-sm-6.col-xs-12
+							+e.info-icon_phone
+							+e.info-content
+								+e.info-text Контактный номер:
+									+e.info-bold +7(495)921-45-39
+									+e.info-link(href=jv0) Заказать обратный звонок
 

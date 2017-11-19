@@ -22,14 +22,14 @@ html(lang='ru')
 		+e.content
 			.content
 				.row.between-xs
-					+e.aside
+					+e.aside.col-md-3.col-sm-4.col-xs-12.last-xs.first-md.first-sm
 						+e.aside-menu
 							+aside-menu
 						+e.aside-form
 							+aside-form
 
 						block aside
-					+e.main
+					+e.main.col-md-9.col-sm-8.col-xs-12
 						block content
 
 		+e.bottom

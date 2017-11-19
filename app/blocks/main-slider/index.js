@@ -18,6 +18,7 @@ const sliderOptions = {
 	autoplay: {
 		delay: 5000,
 	},
+	simulateTouch: true,
 }
 
 /* eslint-disable no-unused-vars */

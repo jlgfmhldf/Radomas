@@ -23,6 +23,7 @@
 
 	&__content
 		position: relative
+		padding-y: 10px
 
 	&__image
 		position: absolute
@@ -64,3 +65,12 @@
 				right: -50px
 
 
+
+	@media only screen and (max-width: 48em)
+		height: auto
+
+		&__text-content
+			width: 100%
+
+		&__image
+			display: none

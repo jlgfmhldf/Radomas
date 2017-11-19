@@ -12,9 +12,14 @@
 		font-size: 16px
 		font-family: $GothamProMedium
 
+		@media screen and (max-width: 24em)
+			padding-left: 5px
+
+
 .prices-table-item
 	&__td
 		text-align: left
+		padding-y: 5px
 		padding-left: 20px
 		height: 45px
 		border-bottom: 1px solid #e8e8e8
@@ -24,4 +29,13 @@
 		&_name
 			width: 63%
 
+			@media screen and (max-width: 64em)
+				width: 50%
 
+			@media screen and (max-width: 24em)
+				width: 45%
+
+
+		@media screen and (max-width: 24em)
+			padding-left: 5px
+			font-size: 12px

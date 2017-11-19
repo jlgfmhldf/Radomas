@@ -1,6 +1,6 @@
 .header-info
 	display: block
-	size: 100% 95px
+	size: 100% auto
 	background: #fafafa
 
 	&__content
@@ -9,15 +9,10 @@
 		align-items: center
 		height: 100%
 
-	&__info-items
-		display: flex
-		justify-content: space-between
-		align-items: stretch
-
 	&__info-item
 		display: flex
-		margin-right: 25px
 		align-items: center
+		padding-y: 10px
 
 		&:last-child
 			margin-right: 0
@@ -27,6 +22,7 @@
 		centerContent()
 		background-color: #327fd6
 		border-radius: 50%
+		flex-shrink 0
 
 		&::before
 			content: ''
@@ -40,6 +36,7 @@
 
 	&__info-content
 		margin-left: 14px
+		text-align: left
 
 	&__info-text
 		display: block
@@ -62,3 +59,6 @@
 		letter-spacing: -.2px
 		text-align: left
 		color: #3a3a3a
+
+	&__logo
+		padding-y: 10px

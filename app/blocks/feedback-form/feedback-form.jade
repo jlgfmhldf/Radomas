@@ -4,7 +4,7 @@ include ../input/input
 mixin feedback-form()
 	+b.feedback-form&attributes(attributes)
 		.content.row.top-xs
-			+e.text-content.col-xs-6
+			+e.text-content.col-md-6.col-xs-12
 				+e.title Свяжитесь с нами
 				+e.text Мы ответим на все ваши вопросы!
 
@@ -19,16 +19,16 @@ mixin feedback-form()
 				+e.small-text На почту
 				+e('a').email(href='mailto:info@radomas.ru') info@radomas.ru
 
-			+e.form-block.col-xs-6
+			+e.form-block.col-md-6.col-xs-12
 				+e.title Форма обратной связи
 
 				+e.form
 					+e.form-row.row
-						.col-xs-6
+						.col-md-6.col-sm-6.col-xs-12
 							+e.input-title Как Вас зовут?
 							+input({size: 'big'})(placeholder='Введите имя')
 
-						.col-xs-6
+						.col-md-6.col-sm-6.col-xs-12
 							+e.input-title Телефон или эл. Почта
 							+input({size: 'big'})(placeholder='Введите почту')
 

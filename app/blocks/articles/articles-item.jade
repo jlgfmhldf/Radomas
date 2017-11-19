@@ -3,10 +3,10 @@ include ../button/button
 mixin articles-item()
 	+b.articles-item&attributes(attributes)
 		.row
-			.col-xs-4
+			+e.col.col-md-4.col-sm-4.col-xs-12
 				+e.image(src='https://picsum.photos/242/145/?random')
 
-			.col-xs
+			+e.col.col-xs
 				+e.title Что такое строительная лицензия
 				+e.text.
 					Чтобы производить монтаж или ремонт средств, с помощью которых обеспечивается пожарная безопасность в зданиях и сооружениях, необходимо получить соответствующую лицензию в Министерстве чрезвычайных ситуаций.

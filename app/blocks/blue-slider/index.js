@@ -8,6 +8,7 @@ const sliderOptions = {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+	simulateTouch: true,
 }
 
 /* eslint-disable no-unused-vars */

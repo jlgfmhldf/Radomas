@@ -15,17 +15,15 @@ mixin service-how-works()
 
 		+e.items
 			+e.row_indent.row.center-xs
-				+e.item.col-xs-4
+				+e.item.col-md-4.col-xs-12
 					+how-works-item({
 						title: 'Заявка',
 						count: 1,
 						src: 'assets/images/how-works-1.png'
 					}) Оставляете заявку на нашем сайте. <br/> Наш менеджер свяжется с Вами для уточнения деталей.
 
-				+e.circles.col-xs-1
-					+circles
 
-				+e.item.col-xs-4
+				+e.item.col-md-4.col-xs-12
 					+how-works-item({
 						title: 'Консультация',
 						count: 2,
@@ -33,18 +31,14 @@ mixin service-how-works()
 					}) Уточнение специалистом наличия документов согласно перечня.
 
 			+e.row.row.center-xs
-				+e.item.col-xs-4
+				+e.item.col-md-4.col-xs-12
 					+how-works-item({
 						title: 'Договор и оплата',
 						count: 3,
 						src: 'assets/images/how-works-3.png'
 					}) Подписываем договор, предоплата 70%. Оплачиваете удобным для Вас способом.
 
-
-				+e.circles.col-xs-1
-					+circles
-
-				+e.item.col-xs-4
+				+e.item.col-md-4.col-xs-12
 					+how-works-item({
 						title: 'Получение лицензии',
 						count: 4,

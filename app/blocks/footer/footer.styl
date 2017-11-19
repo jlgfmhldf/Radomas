@@ -1,7 +1,6 @@
 .footer
 	padding-top: 35px
 	display block
-	height: 194px
 	background-color: #282828
 	color: #fff
 
@@ -39,6 +38,8 @@
 			content: ''
 			margin-right: 12px
 			display: inline-block
+			flex-shrink: 0
+
 
 		&_email::before
 			sprite $footer_email
@@ -48,11 +49,6 @@
 
 		&_position::before
 			sprite $footer_position
-
-	&__social
-		flex-basis: 12%;
-		max-width: 12%;
-
 
 	&__social-text
 		display: block
@@ -71,6 +67,7 @@
 		background-repeat: no-repeat
 		background-position: center
 		margin-right: 7px
+		flex-shrink: 0
 
 		&::before
 			content: ''
@@ -81,4 +78,7 @@
 
 		&_fb::before
 			sprite $fb
+
+	&__col
+		margin-y: 10px
 

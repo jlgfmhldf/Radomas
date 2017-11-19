@@ -12,7 +12,7 @@ mixin contacts()
 			+main-text Мы ответим на все ваши вопросы!
 
 		.row.between-xs
-			+e.text-block.col-indents
+			+e.text-block.col-indents.col-md-4.col-xs-12
 				+e.contacts-block
 					+e.uppercase-text телефон
 					+e.number +7 (495) 921-45-39
@@ -31,7 +31,7 @@ mixin contacts()
 					+e.location-map-link(href=jv0) Схема проезда
 
 
-			+e('form').form.col-indents
+			+e('form').form.col-indents.col-md-6.col-xs-12
 				+e.form-title Как Вас зовут?
 				+e.input
 					+input({size: 'big'})(placeholder='Введите имя')
@@ -46,10 +46,10 @@ mixin contacts()
 					+input({ tag: 'textarea' })
 
 				+e.form-bottom.row.between-xs
-					.col-xs-5
+					.col-md-5.col-sm-5.col-xs-12
 						+button({ size: 'middle '}) Отправить
 
-					+e.form-bottom-text
+					+e.form-bottom-text.col-xs-12
 						| * Мы постараемся ответить вам в течении
 						| одного рабочего дня. Если ответа вы случайно не получили, пожалуйста позвоните нам в офис:
 						+e('span').bold-text +7 (495) 921-45-39

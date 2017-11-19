@@ -3,26 +3,26 @@ include ../logo/logo
 mixin footer()
 	+b.footer&attributes(attributes)
 		.content.row.between-xs
-			.col-xs-3
+			+e.col.col-md-3.col-xs-12.last-xs.col-sm-4.first-md
 				+logo({
 					white: true,
 				})
 				+e.copy-text © 2012-2017 OOO "Радомас"
 				+e('a').yellow-link Карта сайта
 
-			.col-xs-1
+			+e.col.col-md-1.col-sm-3.col-xs-6
 				+e('a').link(href=jv0) Главная
 				+e('a').link(href=jv0) О нас
 				+e('a').link(href=jv0) Услуги
 				+e('a').link(href=jv0) Цены
 
-			.col-xs-1
+			+e.col.col-md-1.col-sm-3.col-xs-6
 				+e('a').link(href=jv0) Отзывы
 				+e('a').link(href=jv0) F.A.Q.
 				+e('a').link(href=jv0) Словарь
 				+e('a').link(href=jv0) Контакты
 
-			.col-xs-4
+			+e.col.col-md-3.col-sm-5.col-xs-12
 				+e('a').contact_phone(href=jv0) +7 (495) 921-45-39,
 				+e('a').contact_email(href=jv0) info@radomas.ru
 				+e.contact_position
@@ -30,9 +30,9 @@ mixin footer()
 					br
 					| д.28, стр.1
 
-
-			+e.social
-				+e.social-text Мы в соц.сетях:
-				+e.social-wrapper
-					+e('a').social-link_vk(href=jv0)
-					+e('a').social-link_fb(href=jv0)
+			+e.col.col-sm-4.col-md-2.col-xs-12.last-sm
+				.row.middle-xs.between-xs
+					+e.social-text.col-md-12.col-sm-6 Мы в соц.сетях:
+					+e.social-wrapper.col-md-12.col-sm-6
+						+e('a').social-link_vk(href=jv0)
+						+e('a').social-link_fb(href=jv0)

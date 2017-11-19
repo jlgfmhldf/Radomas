@@ -1,16 +1,18 @@
 mixin services-questions()
-	+b.services-button-block.row.middle-xs&attributes(attributes)
+	+b.services-button-block.row.middle-xs.between-sm.center-xs.start-md&attributes(attributes)
 		+e.icon(src='assets/images/services-email.png')
-		.col-xs
+		.col-xs-12.col-md.col-sm-10.start-sm
 			+e('p').bold-text
 				| Готовы ответить на любые ваши вопросы по телефону: +7(495)921-45-39 или пишите на
 				br
 				+e('a').link(href=jv0) radomas@rambler.ru
 
-		+e.button
+		+e.button.col-sm-6.col-md-3
 			+button({
 				size: 'big',
 				tag: 'a',
-				href: 'mailto:radomas@rambler.ru'
+				href: 'mailto:radomas@rambler.ru',
+				block: true
 			}) Написать нам
+
 

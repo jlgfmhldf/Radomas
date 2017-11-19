@@ -7,11 +7,32 @@
 	&__circles
 		margin-top: 50px
 
-	&__row
-
-		&_indent
-			margin-bottom: 50px
-
 	&__button
 		margin-top: 38px
 
+	&__item
+		position: relative
+		padding-right: 65px
+		margin-y: 20px
+
+	&__item::after
+		content: ''
+		sprite $three_circles
+		transform: translateY(50px)
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+
+	&__item:last-child
+		padding-right: 0
+
+		&::after
+			display: none
+
+	@media only screen and (max-width: 64em)
+		&__item
+			padding-right: 0
+
+			&::after
+				display: none

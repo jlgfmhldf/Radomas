@@ -1,4 +1,35 @@
 .how-works-list
 
-	&__circles
+	&__item
+		margin-y: 10px
+		position: relative
+		padding-right: 50px
+
+	&__item::after
+		content: ''
+		sprite $three_circles
 		transform: translateY(50px)
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+
+	&__item:last-child
+		padding-right: 0
+
+		&::after
+			display: none
+
+	@media only screen and (min-width: 48em)
+		&__item:nth-child(2n)
+			padding-right: 0
+
+			&::after
+				display: none
+
+	@media only screen and (max-width: 48em)
+		&__item
+			padding-right: 0
+
+			&::after
+				display: none

@@ -14,6 +14,7 @@ mixin button(data)
 		class=hoverColor && `button_hoverColor_${hoverColor}`
 		class=border && `button_border_${border}`
 		class=style && `button_style_${style}`
+		class=data.block && `button_style_block`
 		href=href
 	)&attributes(attributes)
 		block

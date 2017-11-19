@@ -2665,6 +2665,10 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flexboxgrid@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/flexboxgrid/-/flexboxgrid-6.3.1.tgz#e99898afc07b7047722bb81a958a5fba4d4e20fd"
+
 fobject@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/fobject/-/fobject-0.0.4.tgz#8399e6b9105d2eb8e6df9dcc41123a171688adfe"
@@ -2714,6 +2718,12 @@ form-data@~2.1.1:
 formidable@1.0.x:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.0.17.tgz#ef5491490f9433b705faa77249c99029ae348559"
+
+formstone@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/formstone/-/formstone-1.4.2.tgz#59d9d4161532c4707a845583c48fc10e2cec07b0"
+  dependencies:
+    jquery "^3.2.1"
 
 fresh@0.3.0, fresh@^0.3.0:
   version "0.3.0"
@@ -3345,6 +3355,10 @@ gulplog@^1.0.0:
   resolved "https://registry.yarnpkg.com/gulplog/-/gulplog-1.0.0.tgz#e28c4d45d05ecbbed818363ce8f9c5926229ffe5"
   dependencies:
     glogg "^1.0.0"
+
+hamburgers@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/hamburgers/-/hamburgers-0.9.1.tgz#49bc3bca667a693a8458388c9ef265ae611348d5"
 
 handlebars-layouts@~1.1.0:
   version "1.1.0"

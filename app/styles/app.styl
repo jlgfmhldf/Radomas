@@ -4,10 +4,15 @@ import('helpers/svg-size')
 @import 'helpers/mixins'
 @import 'helpers/fonts'
 @import 'helpers/optimize'
-@import 'helpers/grid.styl'
 
+@import '../../node_modules/formstone/dist/css/navigation.css'
+@import '../../node_modules/flexboxgrid/dist/flexboxgrid.css'
 @import '../../node_modules/swiper/dist/css/swiper.css'
+
+
+
 import('../blocks/**/*')
+
 
 .numbers-list
 	list-style: none
@@ -37,12 +42,11 @@ import('../blocks/**/*')
 
 .page
 	font-family: $GothamPro
-	min-width 1171px + 80
 
 .content
-	margin: auto
-	padding-x: 40px
-	width: $contentSize
+	margin-x: auto
+	padding-x: 3%
+	max-width: $contentSize
 	height: 100%
 	box-sizing: content-box
 

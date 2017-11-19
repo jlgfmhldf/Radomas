@@ -5,5 +5,6 @@ import '../blocks/service-folding-info'
 import '../blocks/tabs'
 import '../blocks/faq'
 import '../blocks/popup'
+import '../blocks/header-menu'
 
 window.$ = $
