@@ -4,6 +4,63 @@ mixin header-menu(links)
 			+e.mobile-btn.js-mobile-btn ☰ Меню
 
 			+e('ul').list.row.between-md.middle-xs.start-xs.js-menu(data-navigation-handle=".js-mobile-btn" data-navigation-content=".page__content")
-				each link in links
-					+e('li').list-item.col-md.col-sm-12.col-xs-12
-						+e('a').link(href=link.href class=link.active && 'header-menu__link_active')=link.name
+				each link, i in links
+
+
+					if (i === 1)
+						+e('li').list-item_submenu.col-md.col-sm-12.col-xs-12
+							+e('a').link(href=link.href class=link.active && 'header-menu__link_active')=link.name
+
+							+e('ul').submenu
+								+e.submenu-item
+									+e('a').submenu-link(href=jv0) Порошковая покраска в цвета Candy
+
+								+e.submenu-item_submenu
+									+e('a').submenu-link(href=jv0) Вложенные
+
+									+e('ul').submenu
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Вложенные
+
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Пункты
+
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Меню
+
+
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Порошковая покраска в цвета Candy
+
+
+
+
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Порошковая покраска мото дисков в 2 и более цвета
+
+
+										+e.submenu-item
+											+e('a').submenu-link(href=jv0)
+												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
+												| Порошковая покраска в цвета Candy
+
+
+								+e.submenu-item
+									+e('a').submenu-link(href=jv0) Пункты
+
+								+e.submenu-item
+									+e('a').submenu-link(href=jv0) Меню
+
+					else
+						+e('li').list-item.col-md.col-sm-12.col-xs-12
+							+e('a').link(href=link.href class=link.active && 'header-menu__link_active')=link.name

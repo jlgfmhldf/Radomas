@@ -1,7 +1,6 @@
 .header-menu
 	size: 100% auto
 	background-color: #3a3a3a
-	padding-bottom: 10px
 
 
 	&__mobile-btn
@@ -24,7 +23,9 @@
 	&__link
 		position: relative
 		margin-top: 15px
-		padding-bottom: 7px
+		margin-bottom: 15px
+		padding-top: 5px
+		padding-bottom: 5px
 		display: inline-block
 		font-family: $GothamProMedium
 		font-size: 13px
@@ -34,21 +35,100 @@
 		text-transform: uppercase
 		text-decoration: none
 
-		&::before
-			content: ''
-			border-bottom: 2px solid transparent
-			position: absolute
-			bottom: 0
-			left: -12px
-			right: -12px
-			transition: .5s ease
-
-		&_active::before,
-		&:hover::before
-			border-color: #ffc560
+		&_active,
+		&:hover
+			color: #ffc560
 
 		// TODO hover, focus
 
+	&__list-item
+		position: relative
+
+	&__list-item_submenu &__link::before
+		display: none
+
+
+	&__list-item_submenu &__link::after
+		content: '\25BE';
+		color: inherit
+		font-size: 16px;
+		line-height: 16px;
+		padding-left: 8px;
+
+
+	&__submenu
+		width: 250px
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 59px;
+		left: 0;
+		z-index: 9999;
+		background-color: #3a3a3a
+		transition: all .3s ease-in-out;
+		box-shadow: 0 6px 16px 0 rgba(#3a3a3a 0.19)
+
+	&__submenu-item
+		position: relative
+		//border-bottom: 1px solid #e8e8e8
+		color: #1f1f1f
+		font-family: $GothamPro
+
+	&__list-item_submenu:hover > &__link
+		color: #ffc560
+
+	&__submenu-item_submenu > &__submenu-link::after
+		content: '\25b6';
+		position: absolute;
+		right: 25px;
+		top: 18px;
+		font-size: 10px;
+		transition: all .3s ease-in-out
+		color: #d0d0d0
+
+
+
+
+	&__submenu-link
+		display: flex
+		align-items center
+		padding: 14px 33px 14px 24px
+		transition: all .3s ease-in-out
+		cursor: pointer
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		//font-family: $GothamProMedium
+		//color: #5a5a5a
+
+
+		&:hover
+			background #327fd6
+			color: #fff
+
+		&:hover::after
+			color: #fff
+
+
+
+	&__list-item:hover > &__submenu,
+	&__submenu-item_submenu:hover &__submenu
+		opacity: 1;
+		visibility: visible;
+		margin: 0;
+
+	&__submenu-item_submenu &__submenu
+		transform: translateX(100%);
+		top: 0;
+
+		&::before
+			display: none
+
+	&__submenu-icon
+		display: block
+		flex-shrink 0
+		size: 20px
+		margin-right: 10px
 
 .fs-navigation-overlay-nav.fs-navigation-enabled
 	background-color: #3a3a3a
