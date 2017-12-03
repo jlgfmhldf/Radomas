@@ -6,7 +6,7 @@
 	&__mobile-btn
 		display: block
 		padding-top: 10px !important
-		padding-bottom: 10px
+		padding-bottom: 10px !important
 		font-size: 20px
 		color: #fff
 
@@ -121,6 +121,25 @@
 		margin-right: 10px
 
 	@media screen and (max-width: 1040px)
+
+		&
+			visibility: hidden
+
+		&__mobile-btn
+			visibility: visible
+			background: #3a3a3a
+			display: inline-block !important
+			padding: 10px 12px !important
+			width: auto
+			position: fixed
+			z-index: 100
+			top: 17px
+			box-shadow: 0 6px 16px 0 rgba(58,58,58,0.4);
+			color: #ffc55f
+
+			&.fs-navigation-open
+				z-index: -1
+
 
 		&__list
 			box-shadow: 0 6px 16px 0 rgba(#3a3a3a 0.9)

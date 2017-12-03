@@ -1,7 +1,7 @@
 mixin header-menu(links)
 	+b.header-menu&attributes(attributes)
 		.content
-			+e.mobile-btn.js-mobile-btn ☰ Меню
+			+e.mobile-btn.js-mobile-btn ☰
 
 			+e('ul').list.row.between-md.middle-xs.start-xs.js-menu(data-navigation-handle=".js-mobile-btn" data-navigation-content=".page__content")
 				each link, i in links
