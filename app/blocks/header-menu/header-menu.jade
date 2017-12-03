@@ -7,18 +7,18 @@ mixin header-menu(links)
 				each link, i in links
 
 
-					if (i === 1)
+					if (i === 1 || i === 4)
 						+e('li').list-item_submenu.col-md.col-sm-12.col-xs-12
-							+e('a').link(href=link.href class=link.active && 'header-menu__link_active')=link.name
+							+e('a').link.js-submenu-btn(href=link.href class=link.active && 'header-menu__link_active')=link.name
 
-							+e('ul').submenu
+							+e('ul').submenu.js-submenu-list
 								+e.submenu-item
 									+e('a').submenu-link(href=jv0) Порошковая покраска в цвета Candy
 
 								+e.submenu-item_submenu
-									+e('a').submenu-link(href=jv0) Вложенные
+									+e('a').submenu-link.js-submenu-btn(href=jv0) Вложенные
 
-									+e('ul').submenu
+									+e('ul').submenu.js-submenu-list
 										+e.submenu-item
 											+e('a').submenu-link(href=jv0)
 												+e('img').submenu-icon(src='http://via.placeholder.com/20x20')
