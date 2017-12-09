@@ -23,9 +23,6 @@ $submenuBtn.on('click', function () {
 	const $submenuList = $container.find(listSelector).first()
 	const $internalLists = $submenuList.find(listSelector)
 
-
-	// debugger
-
 	$submenuList.toggleClass(listActiveClass)
 	$internalLists.removeClass(listActiveClass)
 })
