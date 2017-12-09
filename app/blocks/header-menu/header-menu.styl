@@ -49,13 +49,8 @@
 		display: none
 
 
-	&__list-item_submenu &__link::after
+	&__list-item_submenu  &__link &__triangle::after
 		content: '\25BE';
-		color: inherit
-		font-size: 16px;
-		line-height: 16px;
-		padding-left: 8px;
-
 
 	&__submenu
 		width: 250px
@@ -75,22 +70,18 @@
 		color: #1f1f1f
 		font-family: $GothamPro
 
+	&__submenu-item &__triangle
+		font-size: 12px;
+		position: absolute;
+		right: 22px;
+		top: 17px;
+		color: #d0d0d0
+
 	&__list-item_submenu:hover > &__link
 		color: #ffc560
 
-	&__submenu-item_submenu > &__submenu-link::after
-		content: '\25b6';
-		position: absolute;
-		right: 25px;
-		top: 18px;
-		font-size: 10px;
-		transition: all .3s ease-in-out
-		color: #d0d0d0
-
-
-
-
 	&__submenu-link
+		position: relative
 		display: flex
 		align-items center
 		padding: 14px 33px 14px 24px
@@ -120,20 +111,33 @@
 		size: 20px
 		margin-right: 10px
 
+	&__triangle
+		font-size: 16px;
+		transition: all 0.3s ease-in-out;
+		display: inline;
+		margin-left: 5px;
+		color: inherit
+
+		 &::after
+			 content: '\25b6';
+			 color: inherit
+
 	@media screen and (max-width: 1040px)
 
 		&
 			visibility: hidden
+			padding-top: 40px
 
 		&__mobile-btn
 			visibility: visible
 			background: #3a3a3a
 			display: inline-block !important
 			padding: 10px 12px !important
-			width: auto
 			position: fixed
 			z-index: 100
-			top: 17px
+			top: 0
+			left: 0
+			width: 100%
 			box-shadow: 0 6px 16px 0 rgba(58,58,58,0.4);
 			color: #ffc55f
 
@@ -156,12 +160,29 @@
 			font-size: 14px
 			padding-x: 15%
 
-		&__list-item_submenu > &__link::after
+		&__triangle
+			height: 100%
+			padding-left: 15px
+			padding-right: 15px
+			position: absolute;
+			right: 25px;
+			top: 0
+			font-size: 12px;
+			transition: all .3s ease-in-out
+			color: inherit
+			display: flex
+			align-items: center
+
+			&::after
+				content: '\25b6';
+				color: inherit
+
+
+		&__list-item_submenu > &__link &__triangle::after
 			content: '\25b6';
-			position: absolute
-			right: 10%;
-			font-size: 10px;
-			transition: all 0.3s ease-in-out
+
+		&__submenu-item &__triangle
+			top: 1px
 
 		&__submenu
 			width: 100%
